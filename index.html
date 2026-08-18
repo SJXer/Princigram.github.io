@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Princigram — Physics-Faithful Scientific Diagram Generation</title>
+    <meta
+      name="description"
+      content="Princigram uses Structured Physical Chain-of-Thought (SP-CoT) supervision to improve the physical faithfulness of generated scientific diagrams."
+    >
+    <meta name="theme-color" content="#071b24">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Princigram">
+    <meta property="og:description" content="Towards Physics-Faithful Generation of Scientific Diagrams">
+    <meta property="og:image" content="https://sjxer.github.io/SP-CoT.github.io/assets/figures/problem-overview.png">
+    <meta property="og:url" content="https://sjxer.github.io/SP-CoT.github.io/">
+
+    <link rel="canonical" href="https://sjxer.github.io/SP-CoT.github.io/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Princigram home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>Princigram</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-nav-toggle
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="#overview">Overview</a>
+          <a href="#spcot">SP-CoT</a>
+          <a href="#data">Data</a>
+          <a href="#benchmark">Benchmark</a>
+          <a href="#results">Results</a>
+          <a href="#interactive">Demo</a>
+          <a href="#citation">Citation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid page-shell">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Physics-faithful scientific diagram generation</p>
+            <h1 id="hero-title">Princigram</h1>
+            <p class="hero-subtitle">Towards Physics-Faithful Generation of Scientific Diagrams</p>
+            <p class="hero-lede">
+              A scientific diagram should follow physical principles, not merely look plausible.
+              Princigram uses explicit, structured physical reasoning to improve diagram generation
+              through <strong>Structured Physical Chain-of-Thought</strong>.
+            </p>
+
+            <div class="hero-actions" aria-label="Project resources">
+              <a class="button button-primary" href="assets/paper/princigram-paper.pdf">Paper PDF</a>
+              <a class="button button-secondary" href="https://arxiv.org/abs/2608.13112" target="_blank" rel="noreferrer">arXiv</a>
+              <a class="button button-secondary" href="#interactive">Interactive demo</a>
+              <a class="button button-secondary" href="https://github.com/SJXer/SP-CoT.github.io" target="_blank" rel="noreferrer">Repository</a>
+            </div>
+
+            <dl class="hero-stats" aria-label="Project statistics">
+              <div>
+                <dt>4.31M</dt>
+                <dd>physics images with structured annotations</dd>
+              </div>
+              <div>
+                <dt>115K</dt>
+                <dd>expert-verified image–annotation pairs</dd>
+              </div>
+              <div>
+                <dt>6</dt>
+                <dd>physics subdisciplines</dd>
+              </div>
+              <div>
+                <dt>1,283</dt>
+                <dd>benchmark items</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="schema-card" aria-label="SP-CoT five-step schema">
+            <div class="schema-topline">
+              <span>SP-CoT</span>
+              <span class="schema-status"><i></i> Physics grounded</span>
+            </div>
+            <p class="schema-kicker">Structured Physical Chain-of-Thought</p>
+            <ol class="schema-steps">
+              <li><span>01</span><div><strong>Scenario</strong><small>Scene and object/system identification</small></div></li>
+              <li><span>02</span><div><strong>Parameters</strong><small>State or parameterization</small></div></li>
+              <li><span>03</span><div><strong>Structure</strong><small>Interaction or structural analysis</small></div></li>
+              <li><span>04</span><div><strong>Laws</strong><small>Coordinate system and governing laws</small></div></li>
+              <li><span>05</span><div><strong>Synthesis</strong><small>Key relationships and idealizing assumptions</small></div></li>
+            </ol>
+            <div class="schema-domains" aria-label="Physics subdisciplines covered in the paper">
+              <span>Mechanics</span>
+              <span>Electromagnetism</span>
+              <span>Physical optics</span>
+              <span>Thermodynamics</span>
+              <span>Acoustics</span>
+              <span>Quantum mechanics</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="author-strip" aria-labelledby="authors-title">
+        <div class="narrow-shell">
+          <h2 class="sr-only" id="authors-title">Authors</h2>
+          <p class="authors">
+            Minghui Zhang<sup>1,2,♠</sup>, Jinxin Shi<sup>1,♠</sup>, Yifan Chang<sup>1</sup>,
+            Liangliang Zhao<sup>1</sup>, Yuandong Pu<sup>1</sup>, Qian Yu<sup>1</sup>, Ming Hu<sup>1</sup>,
+            Hanxiao Zhang<sup>2</sup>, Yun Gu<sup>2</sup>, Yirong Chen<sup>1</sup>, Yu Qiao<sup>1</sup>,
+            Bo Zhang<sup>1</sup>, Xiangchao Yan<sup>1,✉</sup>, Bin Fu<sup>1,✉,♣</sup>,
+            Yihao Liu<sup>1,✉,♣</sup>
+          </p>
+          <p class="affiliations">
+            <span><sup>1</sup> Shanghai Artificial Intelligence Laboratory, Shanghai, China</span>
+            <span><sup>2</sup> Shanghai Jiao Tong University, Shanghai, China</span>
+          </p>
+          <p class="author-notes">♠ Co-first authors &nbsp;·&nbsp; ✉ Corresponding authors &nbsp;·&nbsp; ♣ Project leaders</p>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="overview" aria-labelledby="overview-title">
+        <div class="page-shell">
+          <div class="section-heading">
+            <p class="section-kicker">01 · Motivation</p>
+            <h2 id="overview-title">Plausible is not the same as physically correct.</h2>
+            <p>
+              Generic text-to-image systems can draw polished scientific figures while reversing a
+              force, breaking a circuit topology, bending a ray in the wrong direction, or pairing an
+              equation with the wrong physical state. In education and scientific communication,
+              these are not cosmetic errors—they are misinformation.
+            </p>
+          </div>
+
+          <div class="problem-grid">
+            <article>
+              <span class="card-index">A</span>
+              <h3>Generation failures</h3>
+              <p>Small visual mistakes can violate the underlying physics even when the figure appears convincing.</p>
+            </article>
+            <article>
+              <span class="card-index">B</span>
+              <h3>Understanding–generation gap</h3>
+              <p>A multimodal model may describe the correct physics and still fail to render the same relationships.</p>
+            </article>
+            <article>
+              <span class="card-index">C</span>
+              <h3>Unreliable generic metrics</h3>
+              <p>A CLIP-style alignment score can prefer a physically incorrect image, while an open-vocabulary detector cannot verify the directions, incidences and orderings that determine correctness.</p>
+            </article>
+          </div>
+
+          <figure class="paper-figure figure-wide">
+            <button class="figure-button" type="button" data-zoom="assets/figures/problem-overview.png" data-caption="Challenges in physics-faithful scientific diagram generation and the SP-CoT approach.">
+              <img
+                src="assets/figures/problem-overview.png"
+                alt="Examples of physical errors in generated scientific diagrams, understanding-generation inconsistency, unreliable evaluators, and the SP-CoT approach"
+                width="2200"
+                height="1363"
+                loading="lazy"
+              >
+              <span>Click to enlarge</span>
+            </button>
+            <figcaption>
+              <strong>Figure 1.</strong> Scientific-diagram generation requires correctness in forces,
+              geometry, topology, state and equations—not only visual similarity.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contribution-title">
+        <div class="page-shell">
+          <div class="section-heading compact">
+            <p class="section-kicker">What we introduce</p>
+            <h2 id="contribution-title">One structured representation, from data to evaluation.</h2>
+          </div>
+
+          <div class="contribution-grid">
+            <article class="feature-card feature-accent">
+              <p class="feature-number">01</p>
+              <h3>Structured Physical Chain-of-Thought</h3>
+              <p>A fixed, auditable five-step schema replaces flat captions with an explicit reasoning chain constrained by fidelity rules.</p>
+            </article>
+            <article class="feature-card">
+              <p class="feature-number">02</p>
+              <h3>Large-scale physics corpus</h3>
+              <p>4,313,866 physics images with structured annotations, including 115,037 expert-level image–annotation pairs across six subdisciplines.</p>
+            </article>
+            <article class="feature-card">
+              <p class="feature-number">03</p>
+              <h3>Princigram generator</h3>
+              <p>Two-stage structured supervision transfers across BAGEL and DiMOO unified multimodal backbones.</p>
+            </article>
+            <article class="feature-card">
+              <p class="feature-number">04</p>
+              <h3>VeriphyT2IBench</h3>
+              <p>Item-specific binary checks report judge outcomes for named objects, forces, states and their attributes.</p>
+            </article>
+          </div>
+
+          <figure class="paper-figure figure-tall">
+            <button class="figure-button" type="button" data-zoom="assets/figures/framework-overview.png" data-caption="Data curation, SP-CoT supervision, training and evaluation pipeline.">
+              <img
+                src="assets/figures/framework-overview.png"
+                alt="Overview of data curation, dataset composition, five-step SP-CoT, pre-training, supervised fine-tuning and evaluation"
+                width="1800"
+                height="2204"
+                loading="lazy"
+              >
+              <span>Click to enlarge</span>
+            </button>
+            <figcaption>
+              <strong>Figure 2.</strong> Overview of Princigram's data construction, structured
+              supervision, and training–evaluation pipeline.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="spcot" aria-labelledby="spcot-title">
+        <div class="page-shell">
+          <div class="section-heading heading-on-dark">
+            <p class="section-kicker">02 · Method</p>
+            <h2 id="spcot-title">Structured Physical Chain-of-Thought</h2>
+            <p>
+              SP-CoT makes the physics of a diagram explicit and auditable. It separates visually
+              grounded facts from physically inferred reasoning, requires mathematical content to be
+              typed symbolically in valid LaTeX, and leaves missing information empty instead of guessing.
+            </p>
+          </div>
+
+          <ol class="method-steps">
+            <li>
+              <span class="step-number">01</span>
+              <div><h3>Scenario</h3><p>Identify the scene, system, phenomenon, objects and constraints.</p></div>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <div><h3>Parameters</h3><p>Declare states, components, variables and physical parameterization.</p></div>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <div><h3>Structure</h3><p>Analyze forces, interactions, topology, paths or basis-state structure.</p></div>
+            </li>
+            <li>
+              <span class="step-number">04</span>
+              <div><h3>Laws</h3><p>Choose coordinates, conventions, governing principles and equations.</p></div>
+            </li>
+            <li>
+              <span class="step-number">05</span>
+              <div><h3>Synthesis</h3><p>Summarize the key physical relationship and idealizing assumptions.</p></div>
+            </li>
+          </ol>
+
+          <div class="grounding-grid">
+            <article>
+              <span class="grounding-badge visible">Visible</span>
+              <h3>Grounded in pixels</h3>
+              <p>In each subdiscipline's two designated image-faithful steps, only elements explicitly drawn in the source diagram may be recorded.</p>
+            </article>
+            <article>
+              <span class="grounding-badge inferred">Inferred</span>
+              <h3>Derived through physics</h3>
+              <p>Fields in the remaining steps may be inferred only when they can be logically deduced from the drawn elements; otherwise they remain empty.</p>
+            </article>
+          </div>
+
+          <details class="schema-table-details">
+            <summary>View how the unified five-step schema is instantiated across six physics subdisciplines</summary>
+            <div class="table-scroll" tabindex="0">
+              <table class="schema-table">
+                <thead>
+                  <tr>
+                    <th>Discipline</th>
+                    <th>Scenario</th>
+                    <th>Parameters</th>
+                    <th>Structure</th>
+                    <th>Laws</th>
+                    <th>Synthesis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th>Mechanics</th><td class="is-visible">Objects, attributes &amp; constraints</td><td>Motion state &amp; kinematic variables</td><td class="is-visible">Force analysis</td><td>Coordinate system &amp; Newton's laws</td><td>Key relationship &amp; assumptions</td></tr>
+                  <tr><th>Electromagnetism</th><td>Subdomain &amp; problem type</td><td class="is-visible">Components, sources &amp; parameters</td><td class="is-visible">Circuit topology / field distribution &amp; state</td><td>Conventions &amp; Kirchhoff / Maxwell laws</td><td>Key relationship &amp; assumptions</td></tr>
+                  <tr><th>Physical optics</th><td>Phenomenon type</td><td class="is-visible">Components &amp; parameters</td><td class="is-visible">Optical path, path &amp; phase difference</td><td>Principles &amp; condition equations</td><td>Key relationship &amp; assumptions</td></tr>
+                  <tr><th>Thermodynamics</th><td>System definition &amp; problem type</td><td class="is-visible">Thermodynamic states P, V, T</td><td class="is-visible">Process path &amp; energy transfer</td><td>Governing laws &amp; equations</td><td>Key findings &amp; assumptions</td></tr>
+                  <tr><th>Acoustics</th><td class="is-visible">Scene &amp; phenomenon</td><td class="is-visible">Components &amp; parameters</td><td>Geometry &amp; wave analysis</td><td>Conventions, principles &amp; equations</td><td>Key relationship &amp; assumptions</td></tr>
+                  <tr><th>Quantum mechanics</th><td>Formalism, scenario &amp; degrees of freedom</td><td class="is-visible">Hamiltonian / landscape &amp; parameters</td><td class="is-visible">Boundary conditions / basis &amp; eigenstates</td><td>Evolution &amp; measurement equations</td><td>Key phenomena &amp; assumptions</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="table-note"><span></span> Green cells are constrained to contain only information explicitly visible in the source diagram.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section" id="data" aria-labelledby="data-title">
+        <div class="page-shell">
+          <div class="section-heading">
+            <p class="section-kicker">03 · Physics diagram corpus</p>
+            <h2 id="data-title">Scale for breadth. Experts for correctness.</h2>
+            <p>
+              Images from four complementary sources pass de-duplication, resolution, classification
+              and quality filters before being routed to six physics subdisciplines. Every retained image
+              receives a structured annotation; a human-verified expert tier supports supervised
+              fine-tuning and all evaluation.
+            </p>
+          </div>
+
+          <div class="data-layout">
+            <figure class="visual-card">
+              <img
+                src="assets/figures/data-pipeline.svg"
+                alt="Data pipeline from a 5.58 million image raw pool to 4.31 million classified images, expert annotation, train and test sets, and VeriphyT2IBench"
+                loading="lazy"
+              >
+              <figcaption>Data curation and expert split pipeline.</figcaption>
+            </figure>
+
+            <div class="data-facts">
+              <article><strong>4,313,866</strong><span>full corpus with structured annotations</span></article>
+              <article><strong>115,037</strong><span>expert-verified total</span></article>
+              <article><strong>109,288</strong><span>expert-tier training pairs</span></article>
+              <article><strong>5,749</strong><span>held-out expert-tier pairs</span></article>
+            </div>
+          </div>
+
+          <div class="table-card">
+            <div class="table-card-heading">
+              <div><p class="mini-kicker">Final paper counts</p><h3>Corpus and benchmark composition</h3></div>
+              <p>Images per physics subdiscipline</p>
+            </div>
+            <div class="table-scroll" tabindex="0">
+              <table class="data-table">
+                <thead>
+                  <tr><th>Subdiscipline</th><th>Structured</th><th>Expert total</th><th>Train</th><th>Test</th><th>Benchmark</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>Mechanics</th><td>1,938,649</td><td>27,583</td><td>26,204</td><td>1,379</td><td>300</td></tr>
+                  <tr><th>Electromagnetism</th><td>240,025</td><td>41,927</td><td>39,831</td><td>2,096</td><td>173</td></tr>
+                  <tr><th>Physical optics</th><td>48,282</td><td>8,419</td><td>7,999</td><td>420</td><td>168</td></tr>
+                  <tr><th>Thermodynamics</th><td>346,904</td><td>9,026</td><td>8,575</td><td>451</td><td>163</td></tr>
+                  <tr><th>Acoustics</th><td>641,477</td><td>6,489</td><td>6,165</td><td>324</td><td>320</td></tr>
+                  <tr><th>Quantum mechanics</th><td>1,098,529</td><td>21,593</td><td>20,514</td><td>1,079</td><td>159</td></tr>
+                </tbody>
+                <tfoot>
+                  <tr><th>Total</th><td>4,313,866</td><td>115,037</td><td>109,288</td><td>5,749</td><td>1,283</td></tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="benchmark" aria-labelledby="benchmark-title">
+        <div class="page-shell">
+          <div class="section-heading">
+            <p class="section-kicker">04 · VeriphyT2IBench</p>
+            <h2 id="benchmark-title">From one opaque score to named physical facts.</h2>
+            <p>
+              Each of the 1,283 benchmark diagrams yields two binary question banks: a rule-generated
+              local bank covering objects, forces, states and their attributes, and a small model-generated
+              global bank about the whole diagram. The GPT-4o judge sees only the generated image and
+              questions—not the gold answers—so Local scores decompose into named physical facts.
+            </p>
+          </div>
+
+          <div class="metric-definition-grid">
+            <article><span>Local</span><h3>Per-attribute accuracy</h3><p>Rule-generated checks enumerate the individual physical facts represented in each item.</p></article>
+            <article><span>Global</span><h3>Whole-diagram accuracy</h3><p>A small model-generated bank of whole-diagram questions probes overall physical faithfulness.</p></article>
+            <article><span>Strict</span><h3>Item-level pass rate</h3><p>An item passes only when the wrong-answer fraction on its local bank stays within a 0%, 5% or 10% tolerance.</p></article>
+          </div>
+
+          <figure class="paper-figure figure-tall checklist-figure">
+            <button class="figure-button" type="button" data-zoom="assets/figures/qualitative-checklist.png" data-caption="Generated diagrams evaluated with item-specific physical checklists.">
+              <img
+                src="assets/figures/qualitative-checklist.png"
+                alt="Two benchmark examples comparing Princigram, Qwen-Image and FLUX.1 dev with per-attribute physics checklists"
+                width="1800"
+                height="2140"
+                loading="lazy"
+              >
+              <span>Click to enlarge</span>
+            </button>
+            <figcaption>
+              <strong>Structured evaluation examples.</strong> The checklist exposes which named
+              physical checks the judge marks correct or incorrect rather than returning one opaque score.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="results" aria-labelledby="results-title">
+        <div class="page-shell">
+          <div class="section-heading">
+            <p class="section-kicker">05 · Results</p>
+            <h2 id="results-title">Structured supervision improves physical faithfulness.</h2>
+            <p>
+              The gains transfer across two unified multimodal backbones with different mechanisms and
+              scales. The paper finds that the dominant variable is what the model is trained on, not its
+              size or which unified formulation it uses.
+            </p>
+          </div>
+
+          <div class="result-highlights">
+            <article><strong>75.69</strong><span>Veriphy Local</span><small>Princigram-BAGEL</small></article>
+            <article><strong>82.54</strong><span>Veriphy Global</span><small>Princigram-BAGEL</small></article>
+            <article><strong>54.8</strong><span>GenExam relaxed</span><small>BAGEL → Princigram-BAGEL: 13.8 → 54.8</small></article>
+            <article><strong>+29.31</strong><span>Local improvement</span><small>same BAGEL backbone architecture</small></article>
+          </div>
+
+          <div class="results-grid">
+            <figure class="visual-card result-chart">
+              <img
+                src="assets/figures/reasoning-steps.svg"
+                alt="Per-step faithfulness comparison across Scenario, Parameters, Structure, Laws and Synthesis"
+                loading="lazy"
+              >
+              <figcaption>Princigram-BAGEL is strongest on four SP-CoT steps and within 0.5 points on Synthesis.</figcaption>
+            </figure>
+
+            <div class="results-copy">
+              <p class="mini-kicker">VeriphyT2IBench</p>
+              <h3>Improvement without changing the backbone architecture</h3>
+              <div class="score-pair">
+                <div><span>BAGEL</span><strong>46.38</strong><small>Local</small></div>
+                <span class="score-arrow" aria-hidden="true">→</span>
+                <div class="score-best"><span>Princigram-BAGEL</span><strong>75.69</strong><small>Local</small></div>
+              </div>
+              <div class="score-pair">
+                <div><span>DiMOO</span><strong>37.01</strong><small>Local</small></div>
+                <span class="score-arrow" aria-hidden="true">→</span>
+                <div class="score-best"><span>Princigram-DiMOO</span><strong>72.05</strong><small>Local</small></div>
+              </div>
+              <ul class="check-list">
+                <li>Princigram-BAGEL has the best Global score in all six subdisciplines.</li>
+                <li>Princigram-BAGEL has the best Local score in five of six subdisciplines.</li>
+                <li>Leads the best closed baseline in each metric by 5.71 Local and 13.98 Global points overall.</li>
+                <li>Its margin widens on harder prompts in several subdisciplines; optics remains the stated exception.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="table-card result-table-card">
+            <div class="table-card-heading">
+              <div><p class="mini-kicker">Selected models</p><h3>Main benchmark comparison</h3></div>
+              <p>Overall scores (%)</p>
+            </div>
+            <div class="table-scroll" tabindex="0">
+              <table class="data-table result-table">
+                <thead><tr><th>Model</th><th>Veriphy Local</th><th>Veriphy Global</th><th>GenExam Relaxed</th></tr></thead>
+                <tbody>
+                  <tr><th>Gemini 2.5 Flash Image</th><td>69.98</td><td>66.14</td><td>Not reported</td></tr>
+                  <tr><th>GPT-Image-1</th><td>68.32</td><td>68.56</td><td>Not reported</td></tr>
+                  <tr><th>Seedream 4.0</th><td>64.80</td><td>65.07</td><td>49.0</td></tr>
+                  <tr><th>Qwen-Image</th><td>51.79</td><td>60.20</td><td>26.3</td></tr>
+                  <tr><th>BAGEL</th><td>46.38</td><td>62.15</td><td>13.8</td></tr>
+                  <tr><th>Princigram-DiMOO</th><td>72.05</td><td>77.25</td><td>50.4</td></tr>
+                  <tr class="ours-row"><th>Princigram-BAGEL</th><td><strong>75.69</strong></td><td><strong>82.54</strong></td><td><strong>54.8</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="honesty-note">
+            <span aria-hidden="true">!</span>
+            <p><strong>Fully faithful generation remains far from solved.</strong> At zero tolerance, every subject–model score is 0.00 except three 0.31 scores in electromagnetism. At 10% tolerance, Princigram-BAGEL leads every subject except optics, and the absolute scores remain low across the board.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-demo" id="interactive" aria-labelledby="interactive-title">
+        <div class="page-shell page-shell-wide">
+          <div class="section-heading heading-on-dark">
+            <p class="section-kicker">06 · Interactive explorer</p>
+            <h2 id="interactive-title">Inspect the evidence, case by case.</h2>
+            <p>
+              The larger qualitative and checklist viewers are loaded only when selected, keeping the
+              main page lightweight while preserving the interactive supplementary viewers.
+            </p>
+          </div>
+
+          <div class="demo-picker" role="tablist" aria-label="Interactive result viewers">
+            <button
+              class="demo-tab is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-demo-src="assets/demos/spcot-ablation.html"
+              data-demo-title="SP-CoT ablation"
+              data-demo-description="The same model and pipeline, trained with and without structured physical annotation while everything else is held fixed, render three mechanics prompts."
+            >SP-CoT ablation <span>3 prompts</span></button>
+            <button
+              class="demo-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-demo-src="assets/demos/qualitative-comparison.html"
+              data-demo-title="Qualitative model comparison"
+              data-demo-description="Explore an additional 90-case gallery based on VeriphyT2IBench evaluation data across six physics subdisciplines and twelve models; not all cases appear in the paper. This viewer is approximately 28 MB and loads on demand."
+            >Qualitative gallery <span>90 cases</span></button>
+            <button
+              class="demo-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-demo-src="assets/demos/structured-evaluation.html"
+              data-demo-title="Structured checklist evaluation"
+              data-demo-description="Review a 120-case companion viewer with reference, Princigram, Qwen-Image, FLUX.1 dev and item-specific checks; it extends the two examples in paper Figure 13. This viewer is approximately 21 MB and loads on demand."
+            >Checklist explorer <span>120 cases</span></button>
+          </div>
+
+          <div class="demo-panel" role="tabpanel">
+            <div class="demo-panel-bar">
+              <div>
+                <p class="mini-kicker">Selected viewer</p>
+                <h3 data-demo-heading>SP-CoT ablation</h3>
+                <p data-demo-copy>The same model and pipeline, trained with and without structured physical annotation while everything else is held fixed, render three mechanics prompts.</p>
+              </div>
+              <a class="button button-dark" href="assets/demos/spcot-ablation.html" target="_blank" rel="noreferrer" data-demo-open>Open full screen ↗</a>
+            </div>
+            <div class="demo-frame-wrap is-loading" data-demo-wrap>
+              <div class="demo-loading" data-demo-loading><span></span> Loading interactive viewer…</div>
+              <iframe
+                title="SP-CoT ablation interactive viewer"
+                src="assets/demos/spcot-ablation.html"
+                loading="lazy"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-downloads"
+                data-demo-frame
+              ></iframe>
+            </div>
+            <noscript>
+              <p class="noscript-links">
+                JavaScript is disabled. Open the
+                <a href="assets/demos/spcot-ablation.html">ablation</a>,
+                <a href="assets/demos/qualitative-comparison.html">qualitative</a>, or
+                <a href="assets/demos/structured-evaluation.html">checklist</a> viewer directly.
+              </p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" aria-labelledby="limitations-title">
+        <div class="page-shell">
+          <div class="section-heading compact">
+            <p class="section-kicker">Scope and limitations</p>
+            <h2 id="limitations-title">A strong step forward, not the final answer.</h2>
+          </div>
+          <div class="limitation-grid">
+            <article><span>01</span><h3>Current scientific scope</h3><p>The present schemas cover six physics subdisciplines; chemistry, biology and other sciences require dedicated structured templates.</p></article>
+            <article><span>02</span><h3>Two annotation guarantees</h3><p>The expert-level subset is verified by human experts. Corpus-level annotations are machine-generated and unverified; fidelity rules constrain them but do not guarantee correctness.</p></article>
+            <article><span>03</span><h3>Evaluation remains a proxy</h3><p>Both GenExam and the binary-checklist evaluator rely on a vision–language model to answer checks, so their scores remain proxies for expert judgment.</p></article>
+            <article><span>04</span><h3>Closed-model reference</h3><p>The strongest closed models still set the reference in some settings, while absolute GenExam physics scores remain low across the field.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section citation-section" id="citation" aria-labelledby="citation-title">
+        <div class="page-shell">
+          <div class="citation-grid">
+            <div class="section-heading compact citation-copy">
+              <p class="section-kicker">Citation</p>
+              <h2 id="citation-title">Build diagrams from principles.</h2>
+              <p>If this work supports your research, please cite the arXiv preprint.</p>
+              <div class="citation-actions">
+                <a class="button button-primary" href="assets/paper/princigram-paper.pdf">Download paper</a>
+                <a class="text-link" href="https://arxiv.org/abs/2608.13112" target="_blank" rel="noreferrer">View on arXiv ↗</a>
+              </div>
+            </div>
+
+            <div class="bibtex-card">
+              <div class="bibtex-bar"><span>Suggested BibTeX · arXiv preprint</span><button type="button" data-copy-citation>Copy citation</button></div>
+              <pre id="bibtex"><code>@misc{zhang2026towards,
+  title         = {Towards Physics-Faithful Generation of Scientific Diagrams},
+  author        = {Zhang, Minghui and Shi, Jinxin and Chang, Yifan and
+                   Zhao, Liangliang and Pu, Yuandong and Yu, Qian and
+                   Hu, Ming and Zhang, Hanxiao and Gu, Yun and Chen, Yirong and
+                   Qiao, Yu and Zhang, Bo and Yan, Xiangchao and Fu, Bin and Liu, Yihao},
+  year          = {2026},
+  eprint        = {2608.13112},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2608.13112}
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-grid">
+        <div><strong>Princigram</strong><p>Towards Physics-Faithful Generation of Scientific Diagrams</p></div>
+        <div class="footer-links">
+          <a href="assets/paper/princigram-paper.pdf">Paper</a>
+          <a href="https://arxiv.org/abs/2608.13112" target="_blank" rel="noreferrer">arXiv</a>
+          <a href="https://github.com/SJXer/SP-CoT.github.io" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
+        <p class="footer-meta">© <span data-year>2026</span> Princigram Project.</p>
+      </div>
+    </footer>
+
+    <dialog class="image-dialog" data-image-dialog>
+      <button type="button" class="dialog-close" aria-label="Close image preview" data-dialog-close>×</button>
+      <div class="dialog-content">
+        <img src="" alt="" data-dialog-image>
+        <p data-dialog-caption></p>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="512" height="512" fill="#ffffff"/>
+<text x="20" y="26" font-size="17.5" font-weight="700" fill="#1a1c1e">Physics-diagram corpus curation pipeline</text>
+<text x="20" y="42" font-size="9" fill="#8b9096">Flow width ∝ image count; smallest flows floored for legibility.</text>
+<text x="75" y="56" font-size="8.2" font-weight="700" fill="#9aa0a6" text-anchor="middle" letter-spacing="0.3">SOURCES</text>
+<text x="144" y="56" font-size="8.2" font-weight="700" fill="#9aa0a6" text-anchor="middle" letter-spacing="0.3">AGGREGATE</text>
+<text x="214" y="56" font-size="8.2" font-weight="700" fill="#9aa0a6" text-anchor="middle" letter-spacing="0.3">CLASSIFY</text>
+<text x="284" y="56" font-size="8.2" font-weight="700" fill="#9aa0a6" text-anchor="middle" letter-spacing="0.3">EXPERT</text>
+<text x="353" y="56" font-size="8.2" font-weight="700" fill="#9aa0a6" text-anchor="middle" letter-spacing="0.3">TRAIN / TEST</text>
+<text x="423" y="56" font-size="8.2" font-weight="700" fill="#9aa0a6" text-anchor="middle" letter-spacing="0.3">BENCHMARK</text>
+<path d="M78.0,64.0 C109.5,64.0 109.5,64.0 141.0,64.0 L141.0,283.1 C109.5,283.1 109.5,283.1 78.0,283.1 Z" fill="#7b828b" fill-opacity="0.32"/>
+<path d="M78.0,289.1 C109.5,289.1 109.5,283.1 141.0,283.1 L141.0,410.1 C109.5,410.1 109.5,416.1 78.0,416.1 Z" fill="#7b828b" fill-opacity="0.32"/>
+<path d="M78.0,422.1 C109.5,422.1 109.5,410.1 141.0,410.1 L141.0,416.0 C109.5,416.0 109.5,428.0 78.0,428.0 Z" fill="#7b828b" fill-opacity="0.32"/>
+<path d="M147.0,64.0 C179.0,64.0 179.0,64.0 211.0,64.0 L211.0,336.0 C179.0,336.0 179.0,336.0 147.0,336.0 Z" fill="#2a9d8f" fill-opacity="0.32"/>
+<path d="M147.0,336.0 C179.0,336.0 179.0,342.0 211.0,342.0 L211.0,422.0 C179.0,422.0 179.0,416.0 147.0,416.0 Z" fill="#cc6666" fill-opacity="0.32"/>
+<path d="M217.0,64.0 C249.0,64.0 249.0,64.0 281.0,64.0 L281.0,71.3 C249.0,71.3 249.0,71.3 217.0,71.3 Z" fill="#1baf7a" fill-opacity="0.32"/>
+<path d="M217.0,71.3 C249.0,71.3 249.0,85.0 281.0,85.0 L281.0,349.7 C249.0,349.7 249.0,336.0 217.0,336.0 Z" fill="#4a78c4" fill-opacity="0.32"/>
+<path d="M287.0,64.0 C318.5,64.0 318.5,64.0 350.0,64.0 L350.0,70.9 C318.5,70.9 318.5,70.9 287.0,70.9 Z" fill="#178a60" fill-opacity="0.32"/>
+<path d="M287.0,70.9 C318.5,70.9 318.5,85.0 350.0,85.0 L350.0,87.0 C318.5,87.0 318.5,72.9 287.0,72.9 Z" fill="#1baf7a" fill-opacity="0.32"/>
+<path d="M356.0,85.0 C388.0,85.0 388.0,64.0 420.0,64.0 L420.0,66.0 C388.0,66.0 388.0,87.0 356.0,87.0 Z" fill="#0f9a68" fill-opacity="0.32"/>
+<path d="M356.0,87.0 C388.0,87.0 388.0,85.0 420.0,85.0 L420.0,87.0 C388.0,87.0 388.0,89.0 356.0,89.0 Z" fill="#b9bdc2" fill-opacity="0.32"/>
+<rect x="72" y="64.0" width="6" height="219.1" rx="1.5" fill="#9aa1a9"/>
+<text x="67" y="171.6" font-size="10" font-weight="650" fill="#26292c" text-anchor="end">OpenDataLab</text>
+<text x="67" y="181.1" font-size="9" font-weight="600" fill="#2f7d67" text-anchor="end">3.48M</text>
+<rect x="72" y="289.1" width="6" height="127.0" rx="1.5" fill="#9aa1a9"/>
+<text x="67" y="350.6" font-size="10" font-weight="650" fill="#26292c" text-anchor="end">Web archives</text>
+<text x="67" y="360.1" font-size="9" font-weight="600" fill="#2f7d67" text-anchor="end">2.01M</text>
+<rect x="72" y="422.1" width="6" height="15.0" rx="1.5" fill="#9aa1a9"/>
+<text x="67" y="427.6" font-size="10" font-weight="650" fill="#26292c" text-anchor="end">Curated seed</text>
+<text x="67" y="437.1" font-size="9" font-weight="600" fill="#2f7d67" text-anchor="end">93K</text>
+<rect x="141" y="64.0" width="6" height="352.0" rx="1.5" fill="#7b828b"/>
+<text x="152" y="238.0" font-size="10" font-weight="650" fill="#26292c" text-anchor="start">Raw pool</text>
+<text x="152" y="247.5" font-size="9" font-weight="600" fill="#2f7d67" text-anchor="start">5.58M</text>
+<rect x="211" y="64.0" width="6" height="272.0" rx="1.5" fill="#2a9d8f"/>
+<text x="222" y="198.0" font-size="10" font-weight="650" fill="#26292c" text-anchor="start">Classified</text>
+<text x="222" y="207.5" font-size="9" font-weight="600" fill="#2f7d67" text-anchor="start">4.31M</text>
+<rect x="211" y="342.0" width="6" height="80.0" rx="1.5" fill="#cc6666"/>
+<text x="222" y="380.0" font-size="10" font-weight="650" fill="#26292c" text-anchor="start">Discarded</text>
+<text x="222" y="389.5" font-size="9" font-weight="600" fill="#2f7d67" text-anchor="start">1.27M</text>
+<rect x="281" y="64.0" width="6" height="15.0" rx="1.5" fill="#1baf7a"/>
+<text x="292" y="70.5" font-size="9" font-weight="650" fill="#26292c" text-anchor="start">Expert</text>
+<text x="292" y="80.0" font-size="8.5" font-weight="600" fill="#2f7d67" text-anchor="start">115K</text>
+<rect x="281" y="85.0" width="6" height="264.7" rx="1.5" fill="#4a78c4"/>
+<text x="292" y="211.4" font-size="10" font-weight="650" fill="#26292c" text-anchor="start">Corpus-level</text>
+<text x="292" y="220.9" font-size="9" font-weight="600" fill="#2f7d67" text-anchor="start">4.20M</text>
+<text x="292" y="229.9" font-size="8.2" fill="#9aa0a6" text-anchor="start">pre-training</text>
+<rect x="350" y="64.0" width="6" height="15.0" rx="1.5" fill="#178a60"/>
+<text x="361" y="70.5" font-size="9" font-weight="650" fill="#26292c" text-anchor="start">Train</text>
+<text x="361" y="80.0" font-size="8.5" font-weight="600" fill="#2f7d67" text-anchor="start">109K</text>
+<rect x="350" y="85.0" width="6" height="15.0" rx="1.5" fill="#1baf7a"/>
+<text x="361" y="91.5" font-size="9" font-weight="650" fill="#26292c" text-anchor="start">Test</text>
+<text x="361" y="101.0" font-size="8.5" font-weight="600" fill="#2f7d67" text-anchor="start">5,749</text>
+<rect x="420" y="64.0" width="6" height="15.0" rx="1.5" fill="#0f9a68"/>
+<text x="431" y="70.5" font-size="9" font-weight="650" fill="#26292c" text-anchor="start">VeriphyT2IBench</text>
+<text x="431" y="80.0" font-size="8.5" font-weight="600" fill="#2f7d67" text-anchor="start">1,283</text>
+<rect x="420" y="85.0" width="6" height="15.0" rx="1.5" fill="#b9bdc2"/>
+<text x="431" y="91.5" font-size="9" font-weight="650" fill="#26292c" text-anchor="start">Other</text>
+<text x="431" y="101.0" font-size="8.5" font-weight="600" fill="#2f7d67" text-anchor="start">4,466</text>
+</svg>

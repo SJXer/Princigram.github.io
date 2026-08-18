@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="502.312pt" height="570.444911pt" viewBox="0 0 502.312 570.444911" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-28T22:10:48.887433</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 570.444911 
+L 502.312 570.444911 
+L 502.312 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 16.6 98.881868 
+L 498.712 98.881868 
+L 498.712 24.6584 
+L 16.6 24.6584 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 16.6 64.519151 
+L 498.712 64.519151 
+" clip-path="url(#pc13c746c0c)" style="fill: none; stroke: #eef1f4; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="fill: #0c6155; font: 700 6px 'Palatino Linotype'" transform="translate(32.39881 113.793238) rotate(-35)">Ours</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3"/>
+     <g id="text_2">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(60.907722 120.90846) rotate(-35)">Seedream</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_4"/>
+     <g id="text_3">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(97.507056 122.417862) rotate(-35)">Gemini 2.5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_5"/>
+     <g id="text_4">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(131.075272 126.05966) rotate(-35)">GPT-Image-1</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_6"/>
+     <g id="text_5">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(185.463516 115.10315) rotate(-35)">Qwen</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_7"/>
+     <g id="text_6">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(216.894513 120.231461) rotate(-35)">HiDream</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_8"/>
+     <g id="text_7">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(259.543029 117.50518) rotate(-35)">FLUX.1</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_9"/>
+     <g id="text_8">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(296.834291 118.530089) rotate(-35)">SD 3.5 L</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_10"/>
+     <g id="text_9">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(336.996168 117.544972) rotate(-35)">BAGEL</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_11"/>
+     <g id="text_10">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(374.720556 118.266603) rotate(-35)">DiMOO</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_12"/>
+     <g id="text_11">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(412.085542 119.23989) rotate(-35)">Show-o2</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_13"/>
+     <g id="text_12">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(454.071313 116.977669) rotate(-35)">BLIP3o</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_14">
+      <defs>
+       <path id="me127f4d4d6" d="M 0 0 
+L -2 0 
+" style="stroke: #c9d1d8; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="98.881868" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="101.051243" transform="rotate(-0 12.6 101.051243)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="64.519151" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="66.688526" transform="rotate(-0 12.6 66.688526)">50</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="30.156435" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="32.32581" transform="rotate(-0 12.6 32.32581)">100</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <path d="M 63.88108 98.881868 
+L 63.88108 24.6584 
+" clip-path="url(#pc13c746c0c)" style="fill: none; stroke-dasharray: 2.1,1.82; stroke-dashoffset: 0; stroke: #9aa5ae; stroke-width: 0.7"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 16.6 98.881868 
+L 16.6 24.6584 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 16.6 98.881868 
+L 498.712 98.881868 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 30.939344 98.881868 
+L 58.067833 98.881868 
+L 58.067833 44.245149 
+L 30.939344 44.245149 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #178a7b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 69.694328 98.881868 
+L 96.822817 98.881868 
+L 96.822817 47.612695 
+L 69.694328 47.612695 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 108.449312 98.881868 
+L 135.577801 98.881868 
+L 135.577801 44.382599 
+L 108.449312 44.382599 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 147.204296 98.881868 
+L 174.332785 98.881868 
+L 174.332785 45.482206 
+L 147.204296 45.482206 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 185.95928 98.881868 
+L 213.087768 98.881868 
+L 213.087768 55.172492 
+L 185.95928 55.172492 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 224.714264 98.881868 
+L 251.842752 98.881868 
+L 251.842752 60.945429 
+L 224.714264 60.945429 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 263.469248 98.881868 
+L 290.597736 98.881868 
+L 290.597736 63.350819 
+L 263.469248 63.350819 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 302.224232 98.881868 
+L 329.35272 98.881868 
+L 329.35272 57.577883 
+L 302.224232 57.577883 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 340.979215 98.881868 
+L 368.107704 98.881868 
+L 368.107704 62.319938 
+L 340.979215 62.319938 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 379.734199 98.881868 
+L 406.862688 98.881868 
+L 406.862688 67.886698 
+L 379.734199 67.886698 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 418.489183 98.881868 
+L 445.617672 98.881868 
+L 445.617672 63.900623 
+L 418.489183 63.900623 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 457.244167 98.881868 
+L 484.372656 98.881868 
+L 484.372656 68.230325 
+L 457.244167 68.230325 
+z
+" clip-path="url(#pc13c746c0c)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="text_16">
+    <text style="fill: #178a7b; font: 700 8.7px 'Palatino Linotype'; text-anchor: start" x="21.250598" y="21.169522" transform="rotate(-0 21.250598 21.169522)">1.</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #1a2a33; font: 700 8.5px 'Palatino Linotype'; text-anchor: start" x="46.441338" y="21.123334" transform="rotate(-0 46.441338 21.123334)">Scenario</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #0c6155; font: 700 5.6px 'Palatino Linotype'; text-anchor: middle" x="44.503588" y="41.245689" transform="rotate(-0 44.503588 41.245689)">79.5</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="83.258572" y="44.525735" transform="rotate(-0 83.258572 44.525735)">74.6</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="122.013556" y="41.29564" transform="rotate(-0 122.013556 41.29564)">79.3</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="160.76854" y="42.395247" transform="rotate(-0 160.76854 42.395247)">77.7</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="199.523524" y="52.085533" transform="rotate(-0 199.523524 52.085533)">63.6</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="238.278508" y="57.858469" transform="rotate(-0 238.278508 57.858469)">55.2</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="277.033492" y="60.26386" transform="rotate(-0 277.033492 60.26386)">51.7</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="315.788476" y="54.490923" transform="rotate(-0 315.788476 54.490923)">60.1</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="354.54346" y="59.232978" transform="rotate(-0 354.54346 59.232978)">53.2</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="393.298444" y="64.799738" transform="rotate(-0 393.298444 64.799738)">45.1</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="432.053428" y="60.813663" transform="rotate(-0 432.053428 60.813663)">50.9</text>
+   </g>
+   <g id="text_29">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="470.808412" y="65.143365" transform="rotate(-0 470.808412 65.143365)">44.6</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_17">
+    <path d="M 16.6 208.732601 
+L 498.712 208.732601 
+L 498.712 134.509133 
+L 16.6 134.509133 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 16.6 174.369884 
+L 498.712 174.369884 
+" clip-path="url(#pb57c074a93)" style="fill: none; stroke: #eef1f4; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_13">
+     <g id="line2d_19"/>
+     <g id="text_30">
+      <text style="fill: #0c6155; font: 700 6px 'Palatino Linotype'" transform="translate(32.39881 223.643971) rotate(-35)">Ours</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_20"/>
+     <g id="text_31">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(60.907722 230.759193) rotate(-35)">Seedream</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_21"/>
+     <g id="text_32">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(97.507056 232.268595) rotate(-35)">Gemini 2.5</text>
+     </g>
+    </g>
+    <g id="xtick_16">
+     <g id="line2d_22"/>
+     <g id="text_33">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(131.075272 235.910393) rotate(-35)">GPT-Image-1</text>
+     </g>
+    </g>
+    <g id="xtick_17">
+     <g id="line2d_23"/>
+     <g id="text_34">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(185.463516 224.953882) rotate(-35)">Qwen</text>
+     </g>
+    </g>
+    <g id="xtick_18">
+     <g id="line2d_24"/>
+     <g id="text_35">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(216.894513 230.082194) rotate(-35)">HiDream</text>
+     </g>
+    </g>
+    <g id="xtick_19">
+     <g id="line2d_25"/>
+     <g id="text_36">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(259.543029 227.355913) rotate(-35)">FLUX.1</text>
+     </g>
+    </g>
+    <g id="xtick_20">
+     <g id="line2d_26"/>
+     <g id="text_37">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(296.834291 228.380822) rotate(-35)">SD 3.5 L</text>
+     </g>
+    </g>
+    <g id="xtick_21">
+     <g id="line2d_27"/>
+     <g id="text_38">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(336.996168 227.395705) rotate(-35)">BAGEL</text>
+     </g>
+    </g>
+    <g id="xtick_22">
+     <g id="line2d_28"/>
+     <g id="text_39">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(374.720556 228.117336) rotate(-35)">DiMOO</text>
+     </g>
+    </g>
+    <g id="xtick_23">
+     <g id="line2d_29"/>
+     <g id="text_40">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(412.085542 229.090623) rotate(-35)">Show-o2</text>
+     </g>
+    </g>
+    <g id="xtick_24">
+     <g id="line2d_30"/>
+     <g id="text_41">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(454.071313 226.828402) rotate(-35)">BLIP3o</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_4">
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="208.732601" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_42">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="210.901976" transform="rotate(-0 12.6 210.901976)">0</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="174.369884" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_43">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="176.539259" transform="rotate(-0 12.6 176.539259)">50</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_33">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="140.007168" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_44">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="142.176543" transform="rotate(-0 12.6 142.176543)">100</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_34">
+    <path d="M 63.88108 208.732601 
+L 63.88108 134.509133 
+" clip-path="url(#pb57c074a93)" style="fill: none; stroke-dasharray: 2.1,1.82; stroke-dashoffset: 0; stroke: #9aa5ae; stroke-width: 0.7"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 16.6 208.732601 
+L 16.6 134.509133 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 16.6 208.732601 
+L 498.712 208.732601 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 30.939344 208.732601 
+L 58.067833 208.732601 
+L 58.067833 157.325977 
+L 30.939344 157.325977 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #178a7b"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 69.694328 208.732601 
+L 96.822817 208.732601 
+L 96.822817 169.284202 
+L 69.694328 169.284202 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 108.449312 208.732601 
+L 135.577801 208.732601 
+L 135.577801 165.71048 
+L 108.449312 165.71048 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 147.204296 208.732601 
+L 174.332785 208.732601 
+L 174.332785 166.878812 
+L 147.204296 166.878812 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 185.95928 208.732601 
+L 213.087768 208.732601 
+L 213.087768 175.19459 
+L 185.95928 175.19459 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 224.714264 208.732601 
+L 251.842752 208.732601 
+L 251.842752 176.431647 
+L 224.714264 176.431647 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 263.469248 208.732601 
+L 290.597736 208.732601 
+L 290.597736 176.431647 
+L 263.469248 176.431647 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 302.224232 208.732601 
+L 329.35272 208.732601 
+L 329.35272 174.163708 
+L 302.224232 174.163708 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 340.979215 208.732601 
+L 368.107704 208.732601 
+L 368.107704 175.125864 
+L 340.979215 175.125864 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 379.734199 208.732601 
+L 406.862688 208.732601 
+L 406.862688 179.386841 
+L 379.734199 179.386841 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 418.489183 208.732601 
+L 445.617672 208.732601 
+L 445.617672 177.187627 
+L 418.489183 177.187627 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 457.244167 208.732601 
+L 484.372656 208.732601 
+L 484.372656 179.043214 
+L 457.244167 179.043214 
+z
+" clip-path="url(#pb57c074a93)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="text_45">
+    <text style="fill: #178a7b; font: 700 8.7px 'Palatino Linotype'; text-anchor: start" x="21.250598" y="131.020255" transform="rotate(-0 21.250598 131.020255)">2.</text>
+   </g>
+   <g id="text_46">
+    <text style="fill: #1a2a33; font: 700 8.5px 'Palatino Linotype'; text-anchor: start" x="46.441338" y="130.974067" transform="rotate(-0 46.441338 130.974067)">Parameters</text>
+   </g>
+   <g id="text_47">
+    <text style="fill: #0c6155; font: 700 5.6px 'Palatino Linotype'; text-anchor: middle" x="44.503588" y="154.326517" transform="rotate(-0 44.503588 154.326517)">74.8</text>
+   </g>
+   <g id="text_48">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="83.258572" y="166.197243" transform="rotate(-0 83.258572 166.197243)">57.4</text>
+   </g>
+   <g id="text_49">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="122.013556" y="162.62352" transform="rotate(-0 122.013556 162.62352)">62.6</text>
+   </g>
+   <g id="text_50">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="160.76854" y="163.791853" transform="rotate(-0 160.76854 163.791853)">60.9</text>
+   </g>
+   <g id="text_51">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="199.523524" y="172.10763" transform="rotate(-0 199.523524 172.10763)">48.8</text>
+   </g>
+   <g id="text_52">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="238.278508" y="173.344688" transform="rotate(-0 238.278508 173.344688)">47.0</text>
+   </g>
+   <g id="text_53">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="277.033492" y="173.344688" transform="rotate(-0 277.033492 173.344688)">47.0</text>
+   </g>
+   <g id="text_54">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="315.788476" y="171.076749" transform="rotate(-0 315.788476 171.076749)">50.3</text>
+   </g>
+   <g id="text_55">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="354.54346" y="172.038905" transform="rotate(-0 354.54346 172.038905)">48.9</text>
+   </g>
+   <g id="text_56">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="393.298444" y="176.299882" transform="rotate(-0 393.298444 176.299882)">42.7</text>
+   </g>
+   <g id="text_57">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="432.053428" y="174.100668" transform="rotate(-0 432.053428 174.100668)">45.9</text>
+   </g>
+   <g id="text_58">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="470.808412" y="175.956254" transform="rotate(-0 470.808412 175.956254)">43.2</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_32">
+    <path d="M 16.6 318.583334 
+L 498.712 318.583334 
+L 498.712 244.359866 
+L 16.6 244.359866 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_35">
+    <path d="M 16.6 284.220617 
+L 498.712 284.220617 
+" clip-path="url(#p482e162172)" style="fill: none; stroke: #eef1f4; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_25">
+     <g id="line2d_36"/>
+     <g id="text_59">
+      <text style="fill: #0c6155; font: 700 6px 'Palatino Linotype'" transform="translate(32.39881 333.494704) rotate(-35)">Ours</text>
+     </g>
+    </g>
+    <g id="xtick_26">
+     <g id="line2d_37"/>
+     <g id="text_60">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(60.907722 340.609926) rotate(-35)">Seedream</text>
+     </g>
+    </g>
+    <g id="xtick_27">
+     <g id="line2d_38"/>
+     <g id="text_61">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(97.507056 342.119328) rotate(-35)">Gemini 2.5</text>
+     </g>
+    </g>
+    <g id="xtick_28">
+     <g id="line2d_39"/>
+     <g id="text_62">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(131.075272 345.761126) rotate(-35)">GPT-Image-1</text>
+     </g>
+    </g>
+    <g id="xtick_29">
+     <g id="line2d_40"/>
+     <g id="text_63">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(185.463516 334.804615) rotate(-35)">Qwen</text>
+     </g>
+    </g>
+    <g id="xtick_30">
+     <g id="line2d_41"/>
+     <g id="text_64">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(216.894513 339.932926) rotate(-35)">HiDream</text>
+     </g>
+    </g>
+    <g id="xtick_31">
+     <g id="line2d_42"/>
+     <g id="text_65">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(259.543029 337.206646) rotate(-35)">FLUX.1</text>
+     </g>
+    </g>
+    <g id="xtick_32">
+     <g id="line2d_43"/>
+     <g id="text_66">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(296.834291 338.231555) rotate(-35)">SD 3.5 L</text>
+     </g>
+    </g>
+    <g id="xtick_33">
+     <g id="line2d_44"/>
+     <g id="text_67">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(336.996168 337.246438) rotate(-35)">BAGEL</text>
+     </g>
+    </g>
+    <g id="xtick_34">
+     <g id="line2d_45"/>
+     <g id="text_68">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(374.720556 337.968069) rotate(-35)">DiMOO</text>
+     </g>
+    </g>
+    <g id="xtick_35">
+     <g id="line2d_46"/>
+     <g id="text_69">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(412.085542 338.941356) rotate(-35)">Show-o2</text>
+     </g>
+    </g>
+    <g id="xtick_36">
+     <g id="line2d_47"/>
+     <g id="text_70">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(454.071313 336.679135) rotate(-35)">BLIP3o</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_7">
+     <g id="line2d_48">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="318.583334" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_71">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="320.752709" transform="rotate(-0 12.6 320.752709)">0</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_49">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="284.220617" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_72">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="286.389992" transform="rotate(-0 12.6 286.389992)">50</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_50">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="249.857901" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_73">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="252.027276" transform="rotate(-0 12.6 252.027276)">100</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_51">
+    <path d="M 63.88108 318.583334 
+L 63.88108 244.359866 
+" clip-path="url(#p482e162172)" style="fill: none; stroke-dasharray: 2.1,1.82; stroke-dashoffset: 0; stroke: #9aa5ae; stroke-width: 0.7"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 16.6 318.583334 
+L 16.6 244.359866 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 16.6 318.583334 
+L 498.712 318.583334 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 30.939344 318.583334 
+L 58.067833 318.583334 
+L 58.067833 271.025334 
+L 30.939344 271.025334 
+z
+" clip-path="url(#p482e162172)" style="fill: #178a7b"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 69.694328 318.583334 
+L 96.822817 318.583334 
+L 96.822817 279.203661 
+L 69.694328 279.203661 
+z
+" clip-path="url(#p482e162172)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 108.449312 318.583334 
+L 135.577801 318.583334 
+L 135.577801 275.629938 
+L 108.449312 275.629938 
+z
+" clip-path="url(#p482e162172)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 147.204296 318.583334 
+L 174.332785 318.583334 
+L 174.332785 277.829152 
+L 147.204296 277.829152 
+z
+" clip-path="url(#p482e162172)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 185.95928 318.583334 
+L 213.087768 318.583334 
+L 213.087768 286.557282 
+L 185.95928 286.557282 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 224.714264 318.583334 
+L 251.842752 318.583334 
+L 251.842752 289.581201 
+L 224.714264 289.581201 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 263.469248 318.583334 
+L 290.597736 318.583334 
+L 290.597736 289.718652 
+L 263.469248 289.718652 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_42">
+    <path d="M 302.224232 318.583334 
+L 329.35272 318.583334 
+L 329.35272 286.007479 
+L 302.224232 286.007479 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_43">
+    <path d="M 340.979215 318.583334 
+L 368.107704 318.583334 
+L 368.107704 289.031398 
+L 340.979215 289.031398 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_44">
+    <path d="M 379.734199 318.583334 
+L 406.862688 318.583334 
+L 406.862688 294.666883 
+L 379.734199 294.666883 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_45">
+    <path d="M 418.489183 318.583334 
+L 445.617672 318.583334 
+L 445.617672 290.749534 
+L 418.489183 290.749534 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_46">
+    <path d="M 457.244167 318.583334 
+L 484.372656 318.583334 
+L 484.372656 294.391982 
+L 457.244167 294.391982 
+z
+" clip-path="url(#p482e162172)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="text_74">
+    <text style="fill: #178a7b; font: 700 8.7px 'Palatino Linotype'; text-anchor: start" x="21.250598" y="240.870987" transform="rotate(-0 21.250598 240.870987)">3.</text>
+   </g>
+   <g id="text_75">
+    <text style="fill: #1a2a33; font: 700 8.5px 'Palatino Linotype'; text-anchor: start" x="46.441338" y="240.8248" transform="rotate(-0 46.441338 240.8248)">Structure</text>
+   </g>
+   <g id="text_76">
+    <text style="fill: #0c6155; font: 700 5.6px 'Palatino Linotype'; text-anchor: middle" x="44.503588" y="268.025875" transform="rotate(-0 44.503588 268.025875)">69.2</text>
+   </g>
+   <g id="text_77">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="83.258572" y="276.116701" transform="rotate(-0 83.258572 276.116701)">57.3</text>
+   </g>
+   <g id="text_78">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="122.013556" y="272.542979" transform="rotate(-0 122.013556 272.542979)">62.5</text>
+   </g>
+   <g id="text_79">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="160.76854" y="274.742192" transform="rotate(-0 160.76854 274.742192)">59.3</text>
+   </g>
+   <g id="text_80">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="199.523524" y="283.470323" transform="rotate(-0 199.523524 283.470323)">46.6</text>
+   </g>
+   <g id="text_81">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="238.278508" y="286.494242" transform="rotate(-0 238.278508 286.494242)">42.2</text>
+   </g>
+   <g id="text_82">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="277.033492" y="286.631692" transform="rotate(-0 277.033492 286.631692)">42.0</text>
+   </g>
+   <g id="text_83">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="315.788476" y="282.920519" transform="rotate(-0 315.788476 282.920519)">47.4</text>
+   </g>
+   <g id="text_84">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="354.54346" y="285.944438" transform="rotate(-0 354.54346 285.944438)">43.0</text>
+   </g>
+   <g id="text_85">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="393.298444" y="291.579924" transform="rotate(-0 393.298444 291.579924)">34.8</text>
+   </g>
+   <g id="text_86">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="432.053428" y="287.662574" transform="rotate(-0 432.053428 287.662574)">40.5</text>
+   </g>
+   <g id="text_87">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="470.808412" y="291.305022" transform="rotate(-0 470.808412 291.305022)">35.2</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_47">
+    <path d="M 16.6 428.434067 
+L 498.712 428.434067 
+L 498.712 354.210599 
+L 16.6 354.210599 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_52">
+    <path d="M 16.6 394.07135 
+L 498.712 394.07135 
+" clip-path="url(#pf6e4090c78)" style="fill: none; stroke: #eef1f4; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_7">
+    <g id="xtick_37">
+     <g id="line2d_53"/>
+     <g id="text_88">
+      <text style="fill: #0c6155; font: 700 6px 'Palatino Linotype'" transform="translate(32.39881 443.345437) rotate(-35)">Ours</text>
+     </g>
+    </g>
+    <g id="xtick_38">
+     <g id="line2d_54"/>
+     <g id="text_89">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(60.907722 450.460659) rotate(-35)">Seedream</text>
+     </g>
+    </g>
+    <g id="xtick_39">
+     <g id="line2d_55"/>
+     <g id="text_90">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(97.507056 451.970061) rotate(-35)">Gemini 2.5</text>
+     </g>
+    </g>
+    <g id="xtick_40">
+     <g id="line2d_56"/>
+     <g id="text_91">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(131.075272 455.611859) rotate(-35)">GPT-Image-1</text>
+     </g>
+    </g>
+    <g id="xtick_41">
+     <g id="line2d_57"/>
+     <g id="text_92">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(185.463516 444.655348) rotate(-35)">Qwen</text>
+     </g>
+    </g>
+    <g id="xtick_42">
+     <g id="line2d_58"/>
+     <g id="text_93">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(216.894513 449.783659) rotate(-35)">HiDream</text>
+     </g>
+    </g>
+    <g id="xtick_43">
+     <g id="line2d_59"/>
+     <g id="text_94">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(259.543029 447.057379) rotate(-35)">FLUX.1</text>
+     </g>
+    </g>
+    <g id="xtick_44">
+     <g id="line2d_60"/>
+     <g id="text_95">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(296.834291 448.082288) rotate(-35)">SD 3.5 L</text>
+     </g>
+    </g>
+    <g id="xtick_45">
+     <g id="line2d_61"/>
+     <g id="text_96">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(336.996168 447.097171) rotate(-35)">BAGEL</text>
+     </g>
+    </g>
+    <g id="xtick_46">
+     <g id="line2d_62"/>
+     <g id="text_97">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(374.720556 447.818802) rotate(-35)">DiMOO</text>
+     </g>
+    </g>
+    <g id="xtick_47">
+     <g id="line2d_63"/>
+     <g id="text_98">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(412.085542 448.792089) rotate(-35)">Show-o2</text>
+     </g>
+    </g>
+    <g id="xtick_48">
+     <g id="line2d_64"/>
+     <g id="text_99">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(454.071313 446.529868) rotate(-35)">BLIP3o</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_8">
+    <g id="ytick_10">
+     <g id="line2d_65">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="428.434067" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_100">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="430.603442" transform="rotate(-0 12.6 430.603442)">0</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_66">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="394.07135" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_101">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="396.240725" transform="rotate(-0 12.6 396.240725)">50</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_67">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="359.708634" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_102">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="361.878009" transform="rotate(-0 12.6 361.878009)">100</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_68">
+    <path d="M 63.88108 428.434067 
+L 63.88108 354.210599 
+" clip-path="url(#pf6e4090c78)" style="fill: none; stroke-dasharray: 2.1,1.82; stroke-dashoffset: 0; stroke: #9aa5ae; stroke-width: 0.7"/>
+   </g>
+   <g id="patch_48">
+    <path d="M 16.6 428.434067 
+L 16.6 354.210599 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_49">
+    <path d="M 16.6 428.434067 
+L 498.712 428.434067 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_50">
+    <path d="M 30.939344 428.434067 
+L 58.067833 428.434067 
+L 58.067833 377.027443 
+L 30.939344 377.027443 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #178a7b"/>
+   </g>
+   <g id="patch_51">
+    <path d="M 69.694328 428.434067 
+L 96.822817 428.434067 
+L 96.822817 383.350183 
+L 69.694328 383.350183 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_52">
+    <path d="M 108.449312 428.434067 
+L 135.577801 428.434067 
+L 135.577801 379.432833 
+L 108.449312 379.432833 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_53">
+    <path d="M 147.204296 428.434067 
+L 174.332785 428.434067 
+L 174.332785 379.913911 
+L 147.204296 379.913911 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_54">
+    <path d="M 185.95928 428.434067 
+L 213.087768 428.434067 
+L 213.087768 398.057425 
+L 185.95928 398.057425 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_55">
+    <path d="M 224.714264 428.434067 
+L 251.842752 428.434067 
+L 251.842752 402.79948 
+L 224.714264 402.79948 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_56">
+    <path d="M 263.469248 428.434067 
+L 290.597736 428.434067 
+L 290.597736 402.868206 
+L 263.469248 402.868206 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_57">
+    <path d="M 302.224232 428.434067 
+L 329.35272 428.434067 
+L 329.35272 395.514584 
+L 302.224232 395.514584 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_58">
+    <path d="M 340.979215 428.434067 
+L 368.107704 428.434067 
+L 368.107704 403.692911 
+L 340.979215 403.692911 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_59">
+    <path d="M 379.734199 428.434067 
+L 406.862688 428.434067 
+L 406.862688 412.627217 
+L 379.734199 412.627217 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_60">
+    <path d="M 418.489183 428.434067 
+L 445.617672 428.434067 
+L 445.617672 406.991732 
+L 418.489183 406.991732 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_61">
+    <path d="M 457.244167 428.434067 
+L 484.372656 428.434067 
+L 484.372656 411.458885 
+L 457.244167 411.458885 
+z
+" clip-path="url(#pf6e4090c78)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="text_103">
+    <text style="fill: #178a7b; font: 700 8.7px 'Palatino Linotype'; text-anchor: start" x="21.250598" y="350.72172" transform="rotate(-0 21.250598 350.72172)">4.</text>
+   </g>
+   <g id="text_104">
+    <text style="fill: #1a2a33; font: 700 8.5px 'Palatino Linotype'; text-anchor: start" x="46.441338" y="350.675533" transform="rotate(-0 46.441338 350.675533)">Laws</text>
+   </g>
+   <g id="text_105">
+    <text style="fill: #0c6155; font: 700 5.6px 'Palatino Linotype'; text-anchor: middle" x="44.503588" y="374.027983" transform="rotate(-0 44.503588 374.027983)">74.8</text>
+   </g>
+   <g id="text_106">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="83.258572" y="380.263223" transform="rotate(-0 83.258572 380.263223)">65.6</text>
+   </g>
+   <g id="text_107">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="122.013556" y="376.345873" transform="rotate(-0 122.013556 376.345873)">71.3</text>
+   </g>
+   <g id="text_108">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="160.76854" y="376.826951" transform="rotate(-0 160.76854 376.826951)">70.6</text>
+   </g>
+   <g id="text_109">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="199.523524" y="394.970466" transform="rotate(-0 199.523524 394.970466)">44.2</text>
+   </g>
+   <g id="text_110">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="238.278508" y="399.712521" transform="rotate(-0 238.278508 399.712521)">37.3</text>
+   </g>
+   <g id="text_111">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="277.033492" y="399.781246" transform="rotate(-0 277.033492 399.781246)">37.2</text>
+   </g>
+   <g id="text_112">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="315.788476" y="392.427625" transform="rotate(-0 315.788476 392.427625)">47.9</text>
+   </g>
+   <g id="text_113">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="354.54346" y="400.605951" transform="rotate(-0 354.54346 400.605951)">36.0</text>
+   </g>
+   <g id="text_114">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="393.298444" y="409.540258" transform="rotate(-0 393.298444 409.540258)">23.0</text>
+   </g>
+   <g id="text_115">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="432.053428" y="403.904772" transform="rotate(-0 432.053428 403.904772)">31.2</text>
+   </g>
+   <g id="text_116">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="470.808412" y="408.371925" transform="rotate(-0 470.808412 408.371925)">24.7</text>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g id="patch_62">
+    <path d="M 16.6 538.2848 
+L 498.712 538.2848 
+L 498.712 464.061332 
+L 16.6 464.061332 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_69">
+    <path d="M 16.6 503.922083 
+L 498.712 503.922083 
+" clip-path="url(#p0b54511cb1)" style="fill: none; stroke: #eef1f4; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_9">
+    <g id="xtick_49">
+     <g id="line2d_70"/>
+     <g id="text_117">
+      <text style="fill: #0c6155; font: 700 6px 'Palatino Linotype'" transform="translate(32.39881 553.19617) rotate(-35)">Ours</text>
+     </g>
+    </g>
+    <g id="xtick_50">
+     <g id="line2d_71"/>
+     <g id="text_118">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(60.907722 560.311392) rotate(-35)">Seedream</text>
+     </g>
+    </g>
+    <g id="xtick_51">
+     <g id="line2d_72"/>
+     <g id="text_119">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(97.507056 561.820794) rotate(-35)">Gemini 2.5</text>
+     </g>
+    </g>
+    <g id="xtick_52">
+     <g id="line2d_73"/>
+     <g id="text_120">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(131.075272 565.462592) rotate(-35)">GPT-Image-1</text>
+     </g>
+    </g>
+    <g id="xtick_53">
+     <g id="line2d_74"/>
+     <g id="text_121">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(185.463516 554.506081) rotate(-35)">Qwen</text>
+     </g>
+    </g>
+    <g id="xtick_54">
+     <g id="line2d_75"/>
+     <g id="text_122">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(216.894513 559.634392) rotate(-35)">HiDream</text>
+     </g>
+    </g>
+    <g id="xtick_55">
+     <g id="line2d_76"/>
+     <g id="text_123">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(259.543029 556.908112) rotate(-35)">FLUX.1</text>
+     </g>
+    </g>
+    <g id="xtick_56">
+     <g id="line2d_77"/>
+     <g id="text_124">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(296.834291 557.933021) rotate(-35)">SD 3.5 L</text>
+     </g>
+    </g>
+    <g id="xtick_57">
+     <g id="line2d_78"/>
+     <g id="text_125">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(336.996168 556.947904) rotate(-35)">BAGEL</text>
+     </g>
+    </g>
+    <g id="xtick_58">
+     <g id="line2d_79"/>
+     <g id="text_126">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(374.720556 557.669535) rotate(-35)">DiMOO</text>
+     </g>
+    </g>
+    <g id="xtick_59">
+     <g id="line2d_80"/>
+     <g id="text_127">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(412.085542 558.642822) rotate(-35)">Show-o2</text>
+     </g>
+    </g>
+    <g id="xtick_60">
+     <g id="line2d_81"/>
+     <g id="text_128">
+      <text style="fill: #1a2a33; font: 6px 'Palatino Linotype'" transform="translate(454.071313 556.380601) rotate(-35)">BLIP3o</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_10">
+    <g id="ytick_13">
+     <g id="line2d_82">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="538.2848" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_129">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="540.454175" transform="rotate(-0 12.6 540.454175)">0</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_83">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="503.922083" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_130">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="506.091458" transform="rotate(-0 12.6 506.091458)">50</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_84">
+      <g>
+       <use xlink:href="#me127f4d4d6" x="16.6" y="469.559366" style="fill: #c9d1d8; stroke: #c9d1d8; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_131">
+      <text style="fill: #66727c; font: 6px 'Palatino Linotype'; text-anchor: end" x="12.6" y="471.728741" transform="rotate(-0 12.6 471.728741)">100</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_85">
+    <path d="M 63.88108 538.2848 
+L 63.88108 464.061332 
+" clip-path="url(#p0b54511cb1)" style="fill: none; stroke-dasharray: 2.1,1.82; stroke-dashoffset: 0; stroke: #9aa5ae; stroke-width: 0.7"/>
+   </g>
+   <g id="patch_63">
+    <path d="M 16.6 538.2848 
+L 16.6 464.061332 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_64">
+    <path d="M 16.6 538.2848 
+L 498.712 538.2848 
+" style="fill: none; stroke: #c9d1d8; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_65">
+    <path d="M 30.939344 538.2848 
+L 58.067833 538.2848 
+L 58.067833 479.318378 
+L 30.939344 479.318378 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #178a7b"/>
+   </g>
+   <g id="patch_66">
+    <path d="M 69.694328 538.2848 
+L 96.822817 538.2848 
+L 96.822817 483.441904 
+L 69.694328 483.441904 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_67">
+    <path d="M 108.449312 538.2848 
+L 135.577801 538.2848 
+L 135.577801 479.524554 
+L 108.449312 479.524554 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_68">
+    <path d="M 147.204296 538.2848 
+L 174.332785 538.2848 
+L 174.332785 478.974751 
+L 147.204296 478.974751 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #7c8b99"/>
+   </g>
+   <g id="patch_69">
+    <path d="M 185.95928 538.2848 
+L 213.087768 538.2848 
+L 213.087768 500.898164 
+L 185.95928 500.898164 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_70">
+    <path d="M 224.714264 538.2848 
+L 251.842752 538.2848 
+L 251.842752 506.808551 
+L 224.714264 506.808551 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_71">
+    <path d="M 263.469248 538.2848 
+L 290.597736 538.2848 
+L 290.597736 509.488843 
+L 263.469248 509.488843 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_72">
+    <path d="M 302.224232 538.2848 
+L 329.35272 538.2848 
+L 329.35272 503.578456 
+L 302.224232 503.578456 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_73">
+    <path d="M 340.979215 538.2848 
+L 368.107704 538.2848 
+L 368.107704 508.251786 
+L 340.979215 508.251786 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_74">
+    <path d="M 379.734199 538.2848 
+L 406.862688 538.2848 
+L 406.862688 521.790696 
+L 379.734199 521.790696 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_75">
+    <path d="M 418.489183 538.2848 
+L 445.617672 538.2848 
+L 445.617672 513.955997 
+L 418.489183 513.955997 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="patch_76">
+    <path d="M 457.244167 538.2848 
+L 484.372656 538.2848 
+L 484.372656 519.660208 
+L 457.244167 519.660208 
+z
+" clip-path="url(#p0b54511cb1)" style="fill: #c7d0d8"/>
+   </g>
+   <g id="text_132">
+    <text style="fill: #178a7b; font: 700 8.7px 'Palatino Linotype'; text-anchor: start" x="21.250598" y="460.572453" transform="rotate(-0 21.250598 460.572453)">5.</text>
+   </g>
+   <g id="text_133">
+    <text style="fill: #1a2a33; font: 700 8.5px 'Palatino Linotype'; text-anchor: start" x="46.441338" y="460.507672" transform="rotate(-0 46.441338 460.507672)">Synthesis</text>
+   </g>
+   <g id="text_134">
+    <text style="fill: #0c6155; font: 700 5.6px 'Palatino Linotype'; text-anchor: middle" x="44.503588" y="476.318918" transform="rotate(-0 44.503588 476.318918)">85.8</text>
+   </g>
+   <g id="text_135">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="83.258572" y="480.354945" transform="rotate(-0 83.258572 480.354945)">79.8</text>
+   </g>
+   <g id="text_136">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="122.013556" y="476.437595" transform="rotate(-0 122.013556 476.437595)">85.5</text>
+   </g>
+   <g id="text_137">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="160.76854" y="475.887791" transform="rotate(-0 160.76854 475.887791)">86.3</text>
+   </g>
+   <g id="text_138">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="199.523524" y="497.811205" transform="rotate(-0 199.523524 497.811205)">54.4</text>
+   </g>
+   <g id="text_139">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="238.278508" y="503.721592" transform="rotate(-0 238.278508 503.721592)">45.8</text>
+   </g>
+   <g id="text_140">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="277.033492" y="506.401884" transform="rotate(-0 277.033492 506.401884)">41.9</text>
+   </g>
+   <g id="text_141">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="315.788476" y="500.491497" transform="rotate(-0 315.788476 500.491497)">50.5</text>
+   </g>
+   <g id="text_142">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="354.54346" y="505.164826" transform="rotate(-0 354.54346 505.164826)">43.7</text>
+   </g>
+   <g id="text_143">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="393.298444" y="518.703736" transform="rotate(-0 393.298444 518.703736)">24.0</text>
+   </g>
+   <g id="text_144">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="432.053428" y="510.869037" transform="rotate(-0 432.053428 510.869037)">35.4</text>
+   </g>
+   <g id="text_145">
+    <text style="fill: #66727c; font: 5.6px 'Palatino Linotype'; text-anchor: middle" x="470.808412" y="516.573248" transform="rotate(-0 470.808412 516.573248)">27.1</text>
+   </g>
+  </g>
+  <g id="legend_1">
+   <g id="patch_77">
+    <path d="M 277.70765 12.627 
+L 285.52765 12.627 
+L 285.52765 6.32 
+L 277.70765 6.32 
+z
+" style="fill: #178a7b"/>
+   </g>
+   <g id="text_146">
+    <text style="font: 6.8px 'Palatino Linotype'; text-anchor: start" x="288.92765" y="11.794" transform="rotate(-0 288.92765 11.794)">Ours (Princigram-BAGEL)</text>
+   </g>
+   <g id="patch_78">
+    <path d="M 379.17215 12.627 
+L 386.99215 12.627 
+L 386.99215 6.32 
+L 379.17215 6.32 
+z
+" style="fill: #7c8b99"/>
+   </g>
+   <g id="text_147">
+    <text style="font: 6.8px 'Palatino Linotype'; text-anchor: start" x="390.39215" y="11.794" transform="rotate(-0 390.39215 11.794)">Closed-source</text>
+   </g>
+   <g id="patch_79">
+    <path d="M 443.320588 12.627 
+L 451.140588 12.627 
+L 451.140588 6.32 
+L 443.320588 6.32 
+z
+" style="fill: #c7d0d8"/>
+   </g>
+   <g id="text_148">
+    <text style="font: 6.8px 'Palatino Linotype'; text-anchor: start" x="454.540588" y="11.794" transform="rotate(-0 454.540588 11.794)">Open-source</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc13c746c0c">
+   <rect x="16.6" y="24.6584" width="482.112" height="74.223468"/>
+  </clipPath>
+  <clipPath id="pb57c074a93">
+   <rect x="16.6" y="134.509133" width="482.112" height="74.223468"/>
+  </clipPath>
+  <clipPath id="p482e162172">
+   <rect x="16.6" y="244.359866" width="482.112" height="74.223468"/>
+  </clipPath>
+  <clipPath id="pf6e4090c78">
+   <rect x="16.6" y="354.210599" width="482.112" height="74.223468"/>
+  </clipPath>
+  <clipPath id="p0b54511cb1">
+   <rect x="16.6" y="464.061332" width="482.112" height="74.223468"/>
+  </clipPath>
+ </defs>
+</svg>
