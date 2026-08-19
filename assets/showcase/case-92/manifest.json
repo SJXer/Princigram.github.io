@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "case": {
+    "subject": "Electromagnetism",
+    "id": "92",
+    "summary": "A DC circuit with a current source and resistors in parallel.",
+    "prompt": "The diagram shows a DC circuit with a 1 A current source. There are three resistors: 5 \\Omega, 20 \\Omega, and 15 \\Omega. The 5 \\Omega resistor is in series with the parallel combination of the 20 \\Omega and 15 \\Omega resistors. Voltage labels V_1 and V_2 are across the 20 \\Omega and 15 \\Omega resistors, respectively. The current I_2 through the 15 \\Omega resistor is marked as 0 A.",
+    "detail": "The diagram shows a DC circuit with a 1 A current source. There are three resistors: 5 \\Omega, 20 \\Omega, and 15 \\Omega. The 5 \\Omega resistor is in series with the parallel combination of the 20 \\Omega and 15 \\Omega resistors. Voltage labels V_1 and V_2 are across the 20 \\Omega and 15 \\Omega resistors, respectively. The current I_2 through the 15 \\Omega resistor is marked as 0 A.",
+    "prompt_source_field": "detail",
+    "prompt_source_note": "The demos expose summary and detail fields rather than a separate prompt field; detail is the task text shown by the qualitative viewer."
+  },
+  "sources": {
+    "qualitative": "assets/demos/qualitative-comparison.html",
+    "checklist": "assets/demos/structured-evaluation.html",
+    "case_match": "The subject, id, summary, and detail fields match exactly across both demos."
+  },
+  "extraction": {
+    "method": "Decode the selected embedded JPEG data URI without re-encoding.",
+    "selection": "Use the higher-resolution Checklist Explorer copy for Reference, Qwen-Image, FLUX.1 dev, and Princigram-BAGEL; use the Qualitative Gallery for the other six model outputs."
+  },
+  "images": [
+    {
+      "kind": "reference",
+      "label": "Reference",
+      "file": "reference.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.ref",
+      "width": 679,
+      "height": 307,
+      "bytes": 17711,
+      "sha256": "c818c48b396fb5eab76fdc5c1a64cb97460fc393f3ce62ad0d57a3d7d1996328"
+    },
+    {
+      "kind": "model",
+      "label": "Seedream 4.0",
+      "file": "seedream-4-0.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"Seedream 4.0\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 12926,
+      "sha256": "6ee2e866a71eaacbc2600f1e090c78a0c067a4350044e964c4f0a3805d85e0a3"
+    },
+    {
+      "kind": "model",
+      "label": "Gemini 2.5 Flash Image",
+      "file": "gemini-2-5-flash-image.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"Gemini 2.5 Flash Image\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 31348,
+      "sha256": "1d265871773cf3dc7cf7105464212d546f27e67bb1d6b84109bd8c7c59016c0f"
+    },
+    {
+      "kind": "model",
+      "label": "GPT-Image-1",
+      "file": "gpt-image-1.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"GPT-Image-1\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 21544,
+      "sha256": "2148ee015f2104c295df82f243380d6d7c99cc7b12fc3afe5051fb62657a6adf"
+    },
+    {
+      "kind": "model",
+      "label": "Qwen-Image",
+      "file": "qwen-image.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_qwen",
+      "width": 680,
+      "height": 382,
+      "bytes": 23737,
+      "sha256": "a36b4969aa3daf3811d5c98ff40e23f8524dc8942710ee38782880250a96ddcd"
+    },
+    {
+      "kind": "model",
+      "label": "HiDream-I1-Full",
+      "file": "hidream-i1-full.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"HiDream-I1-Full\"]",
+      "width": 460,
+      "height": 259,
+      "bytes": 11540,
+      "sha256": "bc37e166929c1b6bc1db86ddee0d945e853cb9163910f9c290bd6afd99990023"
+    },
+    {
+      "kind": "model",
+      "label": "FLUX.1 dev",
+      "file": "flux-1-dev.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_flux",
+      "width": 680,
+      "height": 382,
+      "bytes": 18182,
+      "sha256": "c46ffa798adb72c12639c2e1534d0a88f0480c141dcc6db7aca7821b5763070e"
+    },
+    {
+      "kind": "model",
+      "label": "SD 3.5 Large",
+      "file": "sd-3-5-large.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"SD 3.5 Large\"]",
+      "width": 460,
+      "height": 258,
+      "bytes": 12114,
+      "sha256": "1c1cea2bfbab006ef9201d30d38a90d25980361423a9ddfb10de581bb325ee40"
+    },
+    {
+      "kind": "model",
+      "label": "BAGEL",
+      "file": "bagel.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"BAGEL\"]",
+      "width": 460,
+      "height": 258,
+      "bytes": 11463,
+      "sha256": "a63f8afba648e411af6e67a808387341b9f3648f2785cf581ded75b646a5164b"
+    },
+    {
+      "kind": "model",
+      "label": "Princigram-BAGEL",
+      "file": "princigram-bagel.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_ours",
+      "width": 680,
+      "height": 382,
+      "bytes": 24198,
+      "sha256": "ee4b32c3b8fddc43761788b2f6b9208a09136ec9eb0def7a219bf40e87fde88e"
+    }
+  ]
+}
