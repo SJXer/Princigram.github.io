@@ -29,9 +29,6 @@
     <header class="site-header" data-header>
       <div class="nav-shell">
         <a class="brand" href="#top" aria-label="Princigram home">
-          <span class="brand-mark" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </span>
           <span>Princigram</span>
         </a>
 
@@ -60,85 +57,74 @@
 
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-grid page-shell">
-          <div class="hero-copy">
-            <p class="eyebrow"><span></span> Physics-faithful scientific diagram generation</p>
-            <h1 id="hero-title">Princigram</h1>
-            <p class="hero-subtitle">Towards Physics-Faithful Generation of Scientific Diagrams</p>
-            <p class="hero-lede">
-              A scientific diagram should follow physical principles, not merely look plausible.
-              Princigram uses explicit, structured physical reasoning to improve diagram generation
-              through <strong>Structured Physical Chain-of-Thought</strong>.
+        <div class="hero-content page-shell">
+          <p class="hero-eyebrow">Physics-faithful scientific diagram generation</p>
+          <h1 id="hero-title">Princigram</h1>
+          <p class="hero-subtitle">Towards Physics-Faithful Generation of Scientific Diagrams</p>
+
+          <div class="hero-authorship">
+            <p class="hero-authors">
+              Minghui Zhang<sup>1,2,♠</sup>, Jinxin Shi<sup>1,♠</sup>, Yifan Chang<sup>1</sup>,
+              Liangliang Zhao<sup>1</sup>, Yuandong Pu<sup>1</sup>, Qian Yu<sup>1</sup>, Ming Hu<sup>1</sup>,
+              Hanxiao Zhang<sup>2</sup>, Yun Gu<sup>2</sup>, Yirong Chen<sup>1</sup>, Yu Qiao<sup>1</sup>,
+              Bo Zhang<sup>1</sup>, Xiangchao Yan<sup>1,✉</sup>, Bin Fu<sup>1,✉,♣</sup>,
+              Yihao Liu<sup>1,✉,♣</sup>
             </p>
-
-            <div class="hero-actions" aria-label="Project resources">
-              <a class="button button-primary" href="assets/paper/princigram-paper.pdf">Paper PDF</a>
-              <a class="button button-secondary" href="https://arxiv.org/abs/2608.13112" target="_blank" rel="noreferrer">arXiv</a>
-              <a class="button button-secondary" href="#interactive">Interactive demo</a>
-              <a class="button button-secondary" href="https://github.com/SJXer/SP-CoT.github.io" target="_blank" rel="noreferrer">Repository</a>
-            </div>
-
-            <dl class="hero-stats" aria-label="Project statistics">
-              <div>
-                <dt>4.31M</dt>
-                <dd>physics images with structured annotations</dd>
-              </div>
-              <div>
-                <dt>115K</dt>
-                <dd>expert-verified image–annotation pairs</dd>
-              </div>
-              <div>
-                <dt>6</dt>
-                <dd>physics subdisciplines</dd>
-              </div>
-              <div>
-                <dt>1,283</dt>
-                <dd>benchmark items</dd>
-              </div>
-            </dl>
+            <p class="hero-author-notes">♠ Co-first authors &nbsp;·&nbsp; ✉ Corresponding authors &nbsp;·&nbsp; ♣ Project leaders</p>
+            <p class="hero-affiliations">
+              <span><sup>1</sup> Shanghai Artificial Intelligence Laboratory, Shanghai, China</span>
+              <span><sup>2</sup> Shanghai Jiao Tong University, Shanghai, China</span>
+            </p>
           </div>
 
-          <aside class="schema-card" aria-label="SP-CoT five-step schema">
-            <div class="schema-topline">
-              <span>SP-CoT</span>
-              <span class="schema-status"><i></i> Physics grounded</span>
-            </div>
-            <p class="schema-kicker">Structured Physical Chain-of-Thought</p>
-            <ol class="schema-steps">
-              <li><span>01</span><div><strong>Scenario</strong><small>Scene and object/system identification</small></div></li>
-              <li><span>02</span><div><strong>Parameters</strong><small>State or parameterization</small></div></li>
-              <li><span>03</span><div><strong>Structure</strong><small>Interaction or structural analysis</small></div></li>
-              <li><span>04</span><div><strong>Laws</strong><small>Coordinate system and governing laws</small></div></li>
-              <li><span>05</span><div><strong>Synthesis</strong><small>Key relationships and idealizing assumptions</small></div></li>
-            </ol>
-            <div class="schema-domains" aria-label="Physics subdisciplines covered in the paper">
-              <span>Mechanics</span>
-              <span>Electromagnetism</span>
-              <span>Physical optics</span>
-              <span>Thermodynamics</span>
-              <span>Acoustics</span>
-              <span>Quantum mechanics</span>
-            </div>
-          </aside>
+          <div class="hero-actions" aria-label="Project resources">
+            <a class="button hero-resource" href="https://arxiv.org/abs/2608.13112" target="_blank" rel="noreferrer">
+              <span class="resource-mark resource-mark-arxiv" aria-hidden="true">arXiv</span>
+              <span>Technical Report</span>
+            </a>
+            <a class="button hero-resource" href="https://huggingface.co/papers/2608.13112" target="_blank" rel="noreferrer">
+              <span class="resource-mark" aria-hidden="true">HF</span>
+              <span>Hugging Face</span>
+            </a>
+            <span class="button hero-resource hero-resource-disabled" aria-disabled="true" title="GitHub link coming soon">
+              <span class="resource-mark" aria-hidden="true">&lt;/&gt;</span>
+              <span>GitHub</span>
+              <small>Coming soon</small>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-gallery" aria-hidden="true">
+          <div class="hero-gallery-track">
+            <figure><img src="assets/hero/electromagnetism-circuit.jpg" alt="" width="460" height="258" decoding="async"></figure>
+            <figure><img src="assets/hero/mechanics-forces.jpg" alt="" width="460" height="258" decoding="async"></figure>
+            <figure><img src="assets/hero/physical-optics-rays.jpg" alt="" width="460" height="258" decoding="async"></figure>
+            <figure><img src="assets/hero/acoustics-waves.jpg" alt="" width="460" height="258" decoding="async"></figure>
+            <figure><img src="assets/hero/quantum-mechanics.jpg" alt="" width="460" height="258" decoding="async"></figure>
+            <figure><img src="assets/hero/thermodynamics-cycle.jpg" alt="" width="460" height="258" decoding="async"></figure>
+          </div>
         </div>
       </section>
 
-      <section class="author-strip" aria-labelledby="authors-title">
-        <div class="narrow-shell">
-          <h2 class="sr-only" id="authors-title">Authors</h2>
-          <p class="authors">
-            Minghui Zhang<sup>1,2,♠</sup>, Jinxin Shi<sup>1,♠</sup>, Yifan Chang<sup>1</sup>,
-            Liangliang Zhao<sup>1</sup>, Yuandong Pu<sup>1</sup>, Qian Yu<sup>1</sup>, Ming Hu<sup>1</sup>,
-            Hanxiao Zhang<sup>2</sup>, Yun Gu<sup>2</sup>, Yirong Chen<sup>1</sup>, Yu Qiao<sup>1</sup>,
-            Bo Zhang<sup>1</sup>, Xiangchao Yan<sup>1,✉</sup>, Bin Fu<sup>1,✉,♣</sup>,
-            Yihao Liu<sup>1,✉,♣</sup>
-          </p>
-          <p class="affiliations">
-            <span><sup>1</sup> Shanghai Artificial Intelligence Laboratory, Shanghai, China</span>
-            <span><sup>2</sup> Shanghai Jiao Tong University, Shanghai, China</span>
-          </p>
-          <p class="author-notes">♠ Co-first authors &nbsp;·&nbsp; ✉ Corresponding authors &nbsp;·&nbsp; ♣ Project leaders</p>
-        </div>
+      <section class="project-facts" aria-label="Project statistics">
+        <dl class="project-stats page-shell">
+          <div>
+            <dt>4.31M</dt>
+            <dd>physics images with structured annotations</dd>
+          </div>
+          <div>
+            <dt>115K</dt>
+            <dd>expert-verified image–annotation pairs</dd>
+          </div>
+          <div>
+            <dt>6</dt>
+            <dd>physics subdisciplines</dd>
+          </div>
+          <div>
+            <dt>1,283</dt>
+            <dd>benchmark items</dd>
+          </div>
+        </dl>
       </section>
 
       <section class="section section-soft" id="overview" aria-labelledby="overview-title">
@@ -618,7 +604,7 @@
         <div class="footer-links">
           <a href="assets/paper/princigram-paper.pdf">Paper</a>
           <a href="https://arxiv.org/abs/2608.13112" target="_blank" rel="noreferrer">arXiv</a>
-          <a href="https://github.com/SJXer/SP-CoT.github.io" target="_blank" rel="noreferrer">GitHub</a>
+          <span class="footer-link-disabled">GitHub · coming soon</span>
           <a href="#top">Back to top ↑</a>
         </div>
         <p class="footer-meta">© <span data-year>2026</span> Princigram Project.</p>
