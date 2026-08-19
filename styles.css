@@ -577,6 +577,10 @@ a {
     #fff;
 }
 
+.section.featured-showcase {
+  padding-block: clamp(48px, 5.5vh, 64px);
+}
+
 .featured-showcase-heading {
   display: flex;
   align-items: flex-end;
@@ -600,64 +604,88 @@ a {
   white-space: nowrap;
 }
 
+.featured-case-tabs {
+  display: flex;
+  align-items: center;
+  width: min(100%, 2180px);
+  gap: 9px;
+  margin: 0 auto 14px;
+}
+
+.featured-case-tab {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-case-tab:hover,
+.featured-case-tab.is-active {
+  border-color: rgba(41, 155, 136, 0.52);
+  background: var(--teal-pale);
+  color: var(--ink);
+  box-shadow: 0 7px 18px rgba(8, 35, 45, 0.06);
+}
+
+.featured-case-tab span {
+  color: var(--teal);
+  font-size: 0.64rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.featured-case-tab strong {
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.featured-case-panels {
+  width: min(100%, 2180px);
+  min-width: 0;
+  margin-inline: auto;
+}
+
 .qualitative-case {
-  padding: clamp(20px, 2.4vw, 34px);
+  padding: clamp(18px, 1.8vw, 26px);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background: var(--paper-soft);
   box-shadow: var(--shadow);
 }
 
-.qualitative-case-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 18px;
+.qualitative-case[hidden] {
+  display: none;
 }
 
-.qualitative-case-meta span {
-  padding: 6px 11px;
-  border-radius: 999px;
-  background: #fff;
-  color: var(--ink-muted);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
-.qualitative-case-meta span:first-child {
-  background: var(--teal-pale);
-  color: var(--teal);
-}
-
-.qualitative-case-overview {
+.qualitative-comparison-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: clamp(18px, 2vw, 30px);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 1.2vw, 18px);
   align-items: stretch;
-  padding-bottom: clamp(26px, 3vw, 38px);
-  border-bottom: 1px solid var(--line);
 }
 
-.qualitative-prompt,
-.qualitative-reference {
+.qualitative-prompt {
+  grid-column: span 2;
   min-width: 0;
-  margin: 0;
-  padding: clamp(20px, 2.3vw, 32px);
+  padding: clamp(18px, 1.8vw, 26px);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 12px;
   background: #fff;
 }
 
-.qualitative-prompt > p:first-child,
-.qualitative-reference > p,
-.qualitative-generations-heading h3 {
+.qualitative-prompt > p:first-child {
   margin: 0;
   color: var(--teal);
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   font-weight: 850;
   letter-spacing: 0.12em;
   line-height: 1.4;
@@ -665,56 +693,22 @@ a {
 }
 
 .qualitative-prompt h3 {
-  max-width: 700px;
-  margin: 14px 0 0;
+  max-width: 1040px;
+  margin: 10px 0 0;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.55rem, 2.2vw, 2.25rem);
+  font-size: clamp(1.25rem, 1.65vw, 1.85rem);
   font-weight: 500;
-  letter-spacing: -0.035em;
-  line-height: 1.12;
+  letter-spacing: -0.03em;
+  line-height: 1.14;
 }
 
 .qualitative-prompt > p:last-child {
-  max-width: 750px;
-  margin: 20px 0 0;
+  max-width: 1100px;
+  margin: 12px 0 0;
   color: var(--ink-soft);
-  font-size: 0.93rem;
-  line-height: 1.78;
-}
-
-.qualitative-reference {
-  display: flex;
-  flex-direction: column;
-}
-
-.qualitative-reference button {
-  margin-top: 16px;
-}
-
-.qualitative-reference figcaption {
-  margin-top: auto;
-  padding-top: 10px;
-}
-
-.qualitative-generations-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  margin: clamp(25px, 3vw, 38px) 0 16px;
-}
-
-.qualitative-generations-heading span {
-  color: var(--ink-muted);
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.qualitative-model-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(16px, 1.8vw, 26px);
+  font-size: clamp(0.76rem, 0.78vw, 0.88rem);
+  line-height: 1.56;
 }
 
 .showcase-comparison {
@@ -726,7 +720,7 @@ a {
   position: relative;
   display: block;
   width: 100%;
-  aspect-ratio: 460 / 258;
+  aspect-ratio: 16 / 9;
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -1937,6 +1931,16 @@ a {
   backdrop-filter: blur(8px);
 }
 
+@media (max-width: 1080px) {
+  .qualitative-comparison-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .qualitative-prompt {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (min-width: 1180px) {
   .section {
     padding: clamp(58px, 6vh, 72px) 0;
@@ -2495,18 +2499,10 @@ a {
     margin-bottom: 0;
   }
 
-  .qualitative-case-overview {
-    grid-template-columns: 1fr;
-  }
-
-  .qualitative-model-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .showcase-comparison.is-ours {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: min(100%, 620px);
+  .featured-case-tabs {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2px;
   }
 
   .problem-grid,
@@ -2679,26 +2675,26 @@ a {
     padding: 14px;
   }
 
-  .qualitative-case-meta,
-  .qualitative-generations-heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 9px;
+  .featured-case-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .qualitative-prompt,
-  .qualitative-reference {
+  .featured-case-tab {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 12px;
+  }
+
+  .qualitative-prompt {
+    grid-column: auto;
     padding: 18px;
   }
 
-  .qualitative-model-grid {
+  .qualitative-comparison-grid {
     grid-template-columns: 1fr;
     gap: 18px;
-  }
-
-  .showcase-comparison.is-ours {
-    grid-column: auto;
-    width: 100%;
   }
 
   .feature-card,

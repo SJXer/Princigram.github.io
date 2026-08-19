@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "case": {
+    "subject": "Mechanics",
+    "id": "174",
+    "summary": "A skier is descending a slope inclined at 25 degrees, with forces acting on the skier depicted in a free-body diagram.",
+    "prompt": "The image shows a skier on a slope inclined at 25 degrees. The skier is leaning forward, and several forces are acting on them. The forces include the normal force \\( \\vec{N} \\), the frictional force \\( \\vec{f} \\), and the weight \\( \\vec{w} \\) which is decomposed into components \\( \\vec{w}_x \\) and \\( \\vec{w}_y \\). A free-body diagram is also provided, showing these forces acting on a point representing the skier.",
+    "detail": "The image shows a skier on a slope inclined at 25 degrees. The skier is leaning forward, and several forces are acting on them. The forces include the normal force \\( \\vec{N} \\), the frictional force \\( \\vec{f} \\), and the weight \\( \\vec{w} \\) which is decomposed into components \\( \\vec{w}_x \\) and \\( \\vec{w}_y \\). A free-body diagram is also provided, showing these forces acting on a point representing the skier.",
+    "prompt_source_field": "detail",
+    "prompt_source_note": "The demos expose summary and detail fields rather than a separate prompt field; detail is the task text shown by the qualitative viewer."
+  },
+  "scores": {
+    "checklist_items": 55,
+    "princigram_bagel": {
+      "passed": 53,
+      "percentage": 96.4
+    },
+    "qwen_image": {
+      "passed": 12,
+      "percentage": 21.8
+    },
+    "flux_1_dev": {
+      "passed": 12,
+      "percentage": 21.8
+    }
+  },
+  "sources": {
+    "qualitative": "assets/demos/qualitative-comparison.html",
+    "checklist": "assets/demos/structured-evaluation.html",
+    "case_match": "The subject, id, summary, and detail fields match exactly across both demos."
+  },
+  "extraction": {
+    "method": "Decode the selected embedded JPEG data URI without re-encoding.",
+    "selection": "Use the higher-resolution Checklist Explorer copy for Reference, Qwen-Image, FLUX.1 dev, and Princigram-BAGEL; use the Qualitative Gallery for the other six model outputs."
+  },
+  "images": [
+    {
+      "kind": "reference",
+      "label": "Reference",
+      "file": "reference.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.ref",
+      "width": 680,
+      "height": 382,
+      "bytes": 18736,
+      "sha256": "0bc57645936fd577d5b48260e7d38e62493123a85d446bd5aafa932e03e57f5f"
+    },
+    {
+      "kind": "model",
+      "label": "Seedream 4.0",
+      "file": "seedream-4-0.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"Seedream 4.0\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 18698,
+      "sha256": "dc818663622eda3a8ebaa6bb49643645cd6dcd9a63d2541dff242ec40fdaf540"
+    },
+    {
+      "kind": "model",
+      "label": "Gemini 2.5 Flash Image",
+      "file": "gemini-2-5-flash-image.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"Gemini 2.5 Flash Image\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 15446,
+      "sha256": "ab83eb7d55f90571f3dadb4f21f10ef16568959145ab3834942f6af00d2ee752"
+    },
+    {
+      "kind": "model",
+      "label": "GPT-Image-1",
+      "file": "gpt-image-1.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"GPT-Image-1\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 19265,
+      "sha256": "060a14dd21e0215cc2db26c5554e356dd4f7f0cc270de478d0b31dea5d45950f"
+    },
+    {
+      "kind": "model",
+      "label": "Qwen-Image",
+      "file": "qwen-image.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_qwen",
+      "width": 680,
+      "height": 382,
+      "bytes": 31146,
+      "sha256": "202852141687b8b5c8ad5ff98a0e4cfb80ffe7bb52074f8329b147be5cf4925e"
+    },
+    {
+      "kind": "model",
+      "label": "HiDream-I1-Full",
+      "file": "hidream-i1-full.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"HiDream-I1-Full\"]",
+      "width": 460,
+      "height": 259,
+      "bytes": 10063,
+      "sha256": "0b859b808517079d2b257bfb2db90c2f92c2c1567743cd5c0ff85ffedee05075"
+    },
+    {
+      "kind": "model",
+      "label": "FLUX.1 dev",
+      "file": "flux-1-dev.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_flux",
+      "width": 680,
+      "height": 382,
+      "bytes": 27123,
+      "sha256": "349749bb87931c87d7249d91bd73217c515faa33db212f30d2d57a46b10a3e93"
+    },
+    {
+      "kind": "model",
+      "label": "SD 3.5 Large",
+      "file": "sd-3-5-large.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"SD 3.5 Large\"]",
+      "width": 460,
+      "height": 258,
+      "bytes": 14713,
+      "sha256": "c8b81d18e649262090b6c2cd0d02698f63066087cbbbfc1f819d8ff7ebd0920c"
+    },
+    {
+      "kind": "model",
+      "label": "BAGEL",
+      "file": "bagel.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"BAGEL\"]",
+      "width": 460,
+      "height": 258,
+      "bytes": 14616,
+      "sha256": "b5852164fe50201270abe6a7b96dff294ca83124f694121e40327557629693b0"
+    },
+    {
+      "kind": "model",
+      "label": "Princigram-BAGEL",
+      "file": "princigram-bagel.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_ours",
+      "width": 680,
+      "height": 382,
+      "bytes": 31386,
+      "sha256": "53e0ed793999dfd2673830a230744d622f48342b1eae4b570fc985807649fdc5"
+    }
+  ]
+}

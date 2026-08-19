@@ -65,6 +65,42 @@
     observedSections.forEach((section) => sectionObserver.observe(section));
   }
 
+  const featuredCaseTabs = [...document.querySelectorAll("[data-featured-case-tab]")];
+  const featuredCasePanels = [...document.querySelectorAll("[data-featured-case-panel]")];
+
+  const activateFeaturedCase = (tab) => {
+    if (!tab) return;
+    const panelId = tab.getAttribute("aria-controls");
+
+    featuredCaseTabs.forEach((item) => {
+      const isActive = item === tab;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+      item.tabIndex = isActive ? 0 : -1;
+    });
+
+    featuredCasePanels.forEach((panel) => {
+      panel.hidden = panel.id !== panelId;
+    });
+  };
+
+  featuredCaseTabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => activateFeaturedCase(tab));
+    tab.addEventListener("keydown", (event) => {
+      if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+
+      let nextIndex = index;
+      if (event.key === "ArrowRight") nextIndex = (index + 1) % featuredCaseTabs.length;
+      if (event.key === "ArrowLeft") nextIndex = (index - 1 + featuredCaseTabs.length) % featuredCaseTabs.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = featuredCaseTabs.length - 1;
+
+      featuredCaseTabs[nextIndex].focus();
+      activateFeaturedCase(featuredCaseTabs[nextIndex]);
+    });
+  });
+
   const demoTabs = [...document.querySelectorAll("[data-demo-src]")];
   const demoFrame = document.querySelector("[data-demo-frame]");
   const demoWrap = document.querySelector("[data-demo-wrap]");

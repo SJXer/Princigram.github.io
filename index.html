@@ -19,8 +19,8 @@
 
     <link rel="canonical" href="https://sjxer.github.io/SP-CoT.github.io/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20260819-8">
-    <script src="scripts.js?v=20260819-3" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260819-9">
+    <script src="scripts.js?v=20260819-4" defer></script>
   </head>
 
   <body>
@@ -215,11 +215,11 @@
         <div class="page-shell page-shell-wide">
           <div class="featured-showcase-heading">
             <div class="section-heading compact">
-              <p class="section-kicker">Electromagnetism · Case 92</p>
+              <p class="section-kicker">Featured examples</p>
               <h2 id="featured-title">Qualitative comparisons</h2>
               <p>
-                Compare nine model generations for the same VeriphyT2IBench prompt. The complete
-                90-case qualitative gallery is available in Section 06.
+                Switch between two VeriphyT2IBench prompts and compare the reference with nine model
+                generations. The complete 90-case qualitative gallery is available in Section 06.
               </p>
             </div>
             <a class="button button-primary featured-showcase-cta" href="#interactive" data-open-qualitative>
@@ -227,107 +227,203 @@
             </a>
           </div>
 
-          <article class="qualitative-case" aria-labelledby="featured-case-title">
-            <div class="qualitative-case-meta">
+          <div class="featured-case-tabs" role="tablist" aria-label="Featured qualitative cases">
+            <button
+              class="featured-case-tab is-active"
+              id="featured-tab-92"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="featured-panel-92"
+              data-featured-case-tab
+            >
               <span>Electromagnetism</span>
-              <span>Case #92</span>
-            </div>
+              <strong>Case #92</strong>
+            </button>
+            <button
+              class="featured-case-tab"
+              id="featured-tab-174"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="featured-panel-174"
+              tabindex="-1"
+              data-featured-case-tab
+            >
+              <span>Mechanics</span>
+              <strong>Case #174</strong>
+            </button>
+          </div>
 
-            <div class="qualitative-case-overview">
-              <section class="qualitative-prompt" aria-labelledby="featured-case-title">
+          <div class="featured-case-panels">
+            <article
+              class="qualitative-case"
+              id="featured-panel-92"
+              role="tabpanel"
+              aria-labelledby="featured-tab-92"
+              tabindex="0"
+              data-featured-case-panel
+            >
+              <div class="qualitative-comparison-grid">
+                <section class="qualitative-prompt" aria-labelledby="featured-case-title-92">
                 <p>Prompt</p>
-                <h3 id="featured-case-title">A DC circuit with a current source and resistors in parallel.</h3>
-                <p>
-                  The diagram shows a DC circuit with a 1 A current source. There are three resistors:
-                  5 Ω, 20 Ω, and 15 Ω. The 5 Ω resistor is in series with the parallel combination of
-                  the 20 Ω and 15 Ω resistors. Voltage labels V₁ and V₂ are across
-                  the 20 Ω and 15 Ω resistors, respectively. The current I₂ through the 15 Ω
-                  resistor is marked as 0 A.
-                </p>
-              </section>
+                  <h3 id="featured-case-title-92">A DC circuit with a current source and resistors in parallel.</h3>
+                  <p>
+                    The diagram shows a DC circuit with a 1 A current source. There are three resistors:
+                    5 Ω, 20 Ω, and 15 Ω. The 5 Ω resistor is in series with the parallel combination of
+                    the 20 Ω and 15 Ω resistors. Voltage labels V₁ and V₂ are across the 20 Ω and 15 Ω
+                    resistors, respectively. The current I₂ through the 15 Ω resistor is marked as 0 A.
+                  </p>
+                </section>
+                <figure class="showcase-comparison is-reference">
+                  <button type="button" data-zoom="assets/showcase/case-92/reference.jpg" data-caption="Electromagnetism case 92 · Reference diagram">
+                    <img src="assets/showcase/case-92/reference.jpg" alt="Reference diagram for Electromagnetism case 92" width="679" height="307" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Reference</figcaption>
+                </figure>
+                <figure class="showcase-comparison is-ours">
+                  <button type="button" data-zoom="assets/showcase/case-92/princigram-bagel.jpg" data-caption="Electromagnetism case 92 · Princigram-BAGEL generation">
+                    <span>Ours</span>
+                    <img src="assets/showcase/case-92/princigram-bagel.jpg" alt="Princigram-BAGEL generation for Electromagnetism case 92" width="680" height="382" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Princigram-BAGEL</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/seedream-4-0.jpg" data-caption="Electromagnetism case 92 · Seedream 4.0 generation">
+                    <img src="assets/showcase/case-92/seedream-4-0.jpg" alt="Seedream 4.0 generation for Electromagnetism case 92" width="460" height="460" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Seedream 4.0</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/gemini-2-5-flash-image.jpg" data-caption="Electromagnetism case 92 · Gemini 2.5 Flash Image generation">
+                    <img src="assets/showcase/case-92/gemini-2-5-flash-image.jpg" alt="Gemini 2.5 Flash Image generation for Electromagnetism case 92" width="460" height="460" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Gemini 2.5 Flash Image</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/gpt-image-1.jpg" data-caption="Electromagnetism case 92 · GPT-Image-1 generation">
+                    <img src="assets/showcase/case-92/gpt-image-1.jpg" alt="GPT-Image-1 generation for Electromagnetism case 92" width="460" height="460" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>GPT-Image-1</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/qwen-image.jpg" data-caption="Electromagnetism case 92 · Qwen-Image generation">
+                    <img src="assets/showcase/case-92/qwen-image.jpg" alt="Qwen-Image generation for Electromagnetism case 92" width="680" height="382" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Qwen-Image</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/hidream-i1-full.jpg" data-caption="Electromagnetism case 92 · HiDream-I1-Full generation">
+                    <img src="assets/showcase/case-92/hidream-i1-full.jpg" alt="HiDream-I1-Full generation for Electromagnetism case 92" width="460" height="259" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>HiDream-I1-Full</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/flux-1-dev.jpg" data-caption="Electromagnetism case 92 · FLUX.1 dev generation">
+                    <img src="assets/showcase/case-92/flux-1-dev.jpg" alt="FLUX.1 dev generation for Electromagnetism case 92" width="680" height="382" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>FLUX.1 dev</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/sd-3-5-large.jpg" data-caption="Electromagnetism case 92 · SD 3.5 Large generation">
+                    <img src="assets/showcase/case-92/sd-3-5-large.jpg" alt="SD 3.5 Large generation for Electromagnetism case 92" width="460" height="258" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>SD 3.5 Large</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-92/bagel.jpg" data-caption="Electromagnetism case 92 · BAGEL generation">
+                    <img src="assets/showcase/case-92/bagel.jpg" alt="BAGEL generation for Electromagnetism case 92" width="460" height="258" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>BAGEL</figcaption>
+                </figure>
+              </div>
+            </article>
 
-              <figure class="qualitative-reference showcase-comparison is-reference">
-                <p>Reference</p>
-                <button
-                  type="button"
-                  data-zoom="assets/showcase/case-92/reference.jpg"
-                  data-caption="Electromagnetism case 92 · Reference diagram"
-                >
-                  <img
-                    src="assets/showcase/case-92/reference.jpg"
-                    alt="Reference diagram for Electromagnetism case 92"
-                    width="679"
-                    height="307"
-                    loading="lazy"
-                    decoding="async"
-                  >
-                </button>
-                <figcaption>Reference diagram</figcaption>
-              </figure>
-            </div>
-
-            <div class="qualitative-generations-heading">
-              <h3>Model generations</h3>
-              <span>Same prompt · nine models</span>
-            </div>
-            <div class="qualitative-model-grid">
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/seedream-4-0.jpg" data-caption="Electromagnetism case 92 · Seedream 4.0 generation">
-                  <img src="assets/showcase/case-92/seedream-4-0.jpg" alt="Seedream 4.0 generation for Electromagnetism case 92" width="460" height="460" loading="lazy" decoding="async">
-                </button>
-                <figcaption>Seedream 4.0</figcaption>
-              </figure>
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/gemini-2-5-flash-image.jpg" data-caption="Electromagnetism case 92 · Gemini 2.5 Flash Image generation">
-                  <img src="assets/showcase/case-92/gemini-2-5-flash-image.jpg" alt="Gemini 2.5 Flash Image generation for Electromagnetism case 92" width="460" height="460" loading="lazy" decoding="async">
-                </button>
-                <figcaption>Gemini 2.5 Flash Image</figcaption>
-              </figure>
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/gpt-image-1.jpg" data-caption="Electromagnetism case 92 · GPT-Image-1 generation">
-                  <img src="assets/showcase/case-92/gpt-image-1.jpg" alt="GPT-Image-1 generation for Electromagnetism case 92" width="460" height="460" loading="lazy" decoding="async">
-                </button>
-                <figcaption>GPT-Image-1</figcaption>
-              </figure>
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/qwen-image.jpg" data-caption="Electromagnetism case 92 · Qwen-Image generation">
-                  <img src="assets/showcase/case-92/qwen-image.jpg" alt="Qwen-Image generation for Electromagnetism case 92" width="680" height="382" loading="lazy" decoding="async">
-                </button>
-                <figcaption>Qwen-Image</figcaption>
-              </figure>
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/hidream-i1-full.jpg" data-caption="Electromagnetism case 92 · HiDream-I1-Full generation">
-                  <img src="assets/showcase/case-92/hidream-i1-full.jpg" alt="HiDream-I1-Full generation for Electromagnetism case 92" width="460" height="259" loading="lazy" decoding="async">
-                </button>
-                <figcaption>HiDream-I1-Full</figcaption>
-              </figure>
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/flux-1-dev.jpg" data-caption="Electromagnetism case 92 · FLUX.1 dev generation">
-                  <img src="assets/showcase/case-92/flux-1-dev.jpg" alt="FLUX.1 dev generation for Electromagnetism case 92" width="680" height="382" loading="lazy" decoding="async">
-                </button>
-                <figcaption>FLUX.1 dev</figcaption>
-              </figure>
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/sd-3-5-large.jpg" data-caption="Electromagnetism case 92 · SD 3.5 Large generation">
-                  <img src="assets/showcase/case-92/sd-3-5-large.jpg" alt="SD 3.5 Large generation for Electromagnetism case 92" width="460" height="258" loading="lazy" decoding="async">
-                </button>
-                <figcaption>SD 3.5 Large</figcaption>
-              </figure>
-              <figure class="showcase-comparison">
-                <button type="button" data-zoom="assets/showcase/case-92/bagel.jpg" data-caption="Electromagnetism case 92 · BAGEL generation">
-                  <img src="assets/showcase/case-92/bagel.jpg" alt="BAGEL generation for Electromagnetism case 92" width="460" height="258" loading="lazy" decoding="async">
-                </button>
-                <figcaption>BAGEL</figcaption>
-              </figure>
-              <figure class="showcase-comparison is-ours">
-                <button type="button" data-zoom="assets/showcase/case-92/princigram-bagel.jpg" data-caption="Electromagnetism case 92 · Princigram-BAGEL generation">
-                  <span>Ours</span>
-                  <img src="assets/showcase/case-92/princigram-bagel.jpg" alt="Princigram-BAGEL generation for Electromagnetism case 92" width="680" height="382" loading="lazy" decoding="async">
-                </button>
-                <figcaption>Princigram-BAGEL</figcaption>
-              </figure>
-            </div>
-          </article>
+            <article
+              class="qualitative-case"
+              id="featured-panel-174"
+              role="tabpanel"
+              aria-labelledby="featured-tab-174"
+              tabindex="0"
+              data-featured-case-panel
+              hidden
+            >
+              <div class="qualitative-comparison-grid">
+                <section class="qualitative-prompt" aria-labelledby="featured-case-title-174">
+                  <p>Prompt</p>
+                  <h3 id="featured-case-title-174">A skier is descending a slope inclined at 25 degrees, with forces acting on the skier depicted in a free-body diagram.</h3>
+                  <p>
+                    The image shows a skier on a slope inclined at 25 degrees. The skier is leaning
+                    forward, and several forces are acting on them. The forces include the normal force
+                    N⃗, the frictional force f⃗, and the weight w⃗ which is decomposed into components w⃗ₓ
+                    and w⃗ᵧ. A free-body diagram is also provided, showing these forces acting on a point
+                    representing the skier.
+                  </p>
+                </section>
+                <figure class="showcase-comparison is-reference">
+                  <button type="button" data-zoom="assets/showcase/case-174/reference.jpg" data-caption="Mechanics case 174 · Reference diagram">
+                    <img src="assets/showcase/case-174/reference.jpg" alt="Reference diagram for Mechanics case 174" width="680" height="382" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Reference</figcaption>
+                </figure>
+                <figure class="showcase-comparison is-ours">
+                  <button type="button" data-zoom="assets/showcase/case-174/princigram-bagel.jpg" data-caption="Mechanics case 174 · Princigram-BAGEL generation">
+                    <span>Ours</span>
+                    <img src="assets/showcase/case-174/princigram-bagel.jpg" alt="Princigram-BAGEL generation for Mechanics case 174" width="680" height="382" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Princigram-BAGEL</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/seedream-4-0.jpg" data-caption="Mechanics case 174 · Seedream 4.0 generation">
+                    <img src="assets/showcase/case-174/seedream-4-0.jpg" alt="Seedream 4.0 generation for Mechanics case 174" width="460" height="460" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Seedream 4.0</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/gemini-2-5-flash-image.jpg" data-caption="Mechanics case 174 · Gemini 2.5 Flash Image generation">
+                    <img src="assets/showcase/case-174/gemini-2-5-flash-image.jpg" alt="Gemini 2.5 Flash Image generation for Mechanics case 174" width="460" height="460" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Gemini 2.5 Flash Image</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/gpt-image-1.jpg" data-caption="Mechanics case 174 · GPT-Image-1 generation">
+                    <img src="assets/showcase/case-174/gpt-image-1.jpg" alt="GPT-Image-1 generation for Mechanics case 174" width="460" height="460" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>GPT-Image-1</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/qwen-image.jpg" data-caption="Mechanics case 174 · Qwen-Image generation">
+                    <img src="assets/showcase/case-174/qwen-image.jpg" alt="Qwen-Image generation for Mechanics case 174" width="680" height="382" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>Qwen-Image</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/hidream-i1-full.jpg" data-caption="Mechanics case 174 · HiDream-I1-Full generation">
+                    <img src="assets/showcase/case-174/hidream-i1-full.jpg" alt="HiDream-I1-Full generation for Mechanics case 174" width="460" height="259" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>HiDream-I1-Full</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/flux-1-dev.jpg" data-caption="Mechanics case 174 · FLUX.1 dev generation">
+                    <img src="assets/showcase/case-174/flux-1-dev.jpg" alt="FLUX.1 dev generation for Mechanics case 174" width="680" height="382" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>FLUX.1 dev</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/sd-3-5-large.jpg" data-caption="Mechanics case 174 · SD 3.5 Large generation">
+                    <img src="assets/showcase/case-174/sd-3-5-large.jpg" alt="SD 3.5 Large generation for Mechanics case 174" width="460" height="258" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>SD 3.5 Large</figcaption>
+                </figure>
+                <figure class="showcase-comparison">
+                  <button type="button" data-zoom="assets/showcase/case-174/bagel.jpg" data-caption="Mechanics case 174 · BAGEL generation">
+                    <img src="assets/showcase/case-174/bagel.jpg" alt="BAGEL generation for Mechanics case 174" width="460" height="258" loading="lazy" decoding="async">
+                  </button>
+                  <figcaption>BAGEL</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
