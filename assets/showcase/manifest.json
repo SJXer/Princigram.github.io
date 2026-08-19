@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "source": "assets/demos/qualitative-comparison.html",
+  "score_fields_usage": "audit_only",
+  "normalization": {
+    "target_dimensions": "460x258",
+    "electromagnetism-47-reference.jpg": "Source dimensions were 459x258; padded by one white pixel on the right."
+  },
+  "cases": [
+    {
+      "subject": "Mechanics",
+      "id": "174",
+      "summary": "A skier is descending a slope inclined at 25 degrees, with forces acting on the skier depicted in a free-body diagram.",
+      "images": {
+        "reference": "mechanics-174-reference.jpg",
+        "qwen_image": "mechanics-174-qwen-image.jpg",
+        "princigram_bagel": "mechanics-174-princigram-bagel.jpg"
+      },
+      "ours_pct": 96.4,
+      "qwen_pct": 21.8
+    },
+    {
+      "subject": "Thermodynamics",
+      "id": "26",
+      "summary": "An ideal gas undergoes a cyclic process consisting of four stages, as shown on a P-V diagram.",
+      "images": {
+        "reference": "thermodynamics-26-reference.jpg",
+        "qwen_image": "thermodynamics-26-qwen-image.jpg",
+        "princigram_bagel": "thermodynamics-26-princigram-bagel.jpg"
+      },
+      "ours_pct": 95.9,
+      "qwen_pct": 12.2
+    },
+    {
+      "subject": "Electromagnetism",
+      "id": "47",
+      "summary": "A linear arrangement of three point charges along the x-axis.",
+      "images": {
+        "reference": "electromagnetism-47-reference.jpg",
+        "qwen_image": "electromagnetism-47-qwen-image.jpg",
+        "princigram_bagel": "electromagnetism-47-princigram-bagel.jpg"
+      },
+      "ours_pct": 98.4,
+      "qwen_pct": 36.1
+    }
+  ]
+}

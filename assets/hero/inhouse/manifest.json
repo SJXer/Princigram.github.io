@@ -1,0 +1,276 @@
+{
+  "version": 1,
+  "seed": "spcot-hero-20260819-v1",
+  "source_root": "Data/SciT2I_inhouse_Testset_Merged",
+  "selection": {
+    "method": "Sort eligible images by SHA-256(seed + repository-relative source path) and take the first five per subject.",
+    "filters": {
+      "minimum_width": 800,
+      "minimum_height": 500,
+      "minimum_aspect_ratio": 1.15,
+      "maximum_aspect_ratio": 2.4
+    },
+    "eligible_images_by_subject": {
+      "Electromagnetism": 176,
+      "Mechanics": 166,
+      "Optics": 78,
+      "Physical_Acoustics": 92,
+      "Quantum_Mechanics": 67,
+      "Thermodynamics": 80
+    },
+    "images_per_subject": 5
+  },
+  "processing": {
+    "canvas_width": 1200,
+    "canvas_height": 675,
+    "fit": "contain",
+    "background": "#ffffff",
+    "format": "webp",
+    "encoder": "libwebp",
+    "preset": "drawing",
+    "quality": 86,
+    "compression_level": 6
+  },
+  "images": [
+    {
+      "subject": "Electromagnetism",
+      "id": "306",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Electromagnetism/image/306.png",
+      "original_dimensions": { "width": 1291, "height": 716 },
+      "selection_hash": "00819c506f6095b37ec9c14e87dd4acf540b53c90404c739788e0d972386602d",
+      "output": "assets/hero/inhouse/electromagnetism-306.webp"
+    },
+    {
+      "subject": "Electromagnetism",
+      "id": "284",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Electromagnetism/image/284.png",
+      "original_dimensions": { "width": 2433, "height": 1175 },
+      "selection_hash": "02302f58984befa2cfc7d4506f66d89ec407e9b14d6fb42e38c92652f5a04839",
+      "output": "assets/hero/inhouse/electromagnetism-284.webp"
+    },
+    {
+      "subject": "Electromagnetism",
+      "id": "88",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Electromagnetism/image/88.png",
+      "original_dimensions": { "width": 1208, "height": 750 },
+      "selection_hash": "03f6119ba81c970cdd669fbebad685c8cfafe95dd898ce3f4a646842c047a1b8",
+      "output": "assets/hero/inhouse/electromagnetism-88.webp"
+    },
+    {
+      "subject": "Electromagnetism",
+      "id": "183",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Electromagnetism/image/183.png",
+      "original_dimensions": { "width": 1183, "height": 542 },
+      "selection_hash": "03fa9b5a9de4a64d90f5cc66f12b707ae4b0c7a908490dc5000e82af89181d90",
+      "output": "assets/hero/inhouse/electromagnetism-183.webp"
+    },
+    {
+      "subject": "Electromagnetism",
+      "id": "71",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Electromagnetism/image/71.png",
+      "original_dimensions": { "width": 992, "height": 783 },
+      "selection_hash": "04c8dc0279002588271de47534f871e1ae81224e54883d494be1fe6ac753f493",
+      "output": "assets/hero/inhouse/electromagnetism-71.webp"
+    },
+    {
+      "subject": "Mechanics",
+      "id": "174",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Mechanics/image/174.png",
+      "original_dimensions": { "width": 3509, "height": 1973 },
+      "selection_hash": "00e8d56b2d67047431a1d81f10fb5a67ee049a17f5bf51f29019fb5a1449d820",
+      "output": "assets/hero/inhouse/mechanics-174.webp"
+    },
+    {
+      "subject": "Mechanics",
+      "id": "107",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Mechanics/image/107.png",
+      "original_dimensions": { "width": 3066, "height": 1650 },
+      "selection_hash": "026c6f2596c8b0604759911d6d813b9bf050722282efc1407b1b9c48833bd9e1",
+      "output": "assets/hero/inhouse/mechanics-107.webp"
+    },
+    {
+      "subject": "Mechanics",
+      "id": "106",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Mechanics/image/106.png",
+      "original_dimensions": { "width": 2883, "height": 2334 },
+      "selection_hash": "02f4369aafd104e1b00a10028e2b98f9981207fd39748d97686938e74e146f57",
+      "output": "assets/hero/inhouse/mechanics-106.webp"
+    },
+    {
+      "subject": "Mechanics",
+      "id": "273",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Mechanics/image/273.png",
+      "original_dimensions": { "width": 3267, "height": 1633 },
+      "selection_hash": "035bfb7305a0443fecdc47b81e3f0b5e3decb7f476de49c69adc3fb9bc9f9667",
+      "output": "assets/hero/inhouse/mechanics-273.webp"
+    },
+    {
+      "subject": "Mechanics",
+      "id": "197",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Mechanics/image/197.png",
+      "original_dimensions": { "width": 1300, "height": 731 },
+      "selection_hash": "04fe31da8e197bab60363cc6005e7201e7c94953b3a022d54aeac7db3916b01a",
+      "output": "assets/hero/inhouse/mechanics-197.webp"
+    },
+    {
+      "subject": "Optics",
+      "id": "166",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Optics/image/166.png",
+      "original_dimensions": { "width": 1019, "height": 840 },
+      "selection_hash": "01787f8e49614360265f47f0f7f19a3ffc815c2c138bafedf397794c3fede2b2",
+      "output": "assets/hero/inhouse/optics-166.webp"
+    },
+    {
+      "subject": "Optics",
+      "id": "105",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Optics/image/105.png",
+      "original_dimensions": { "width": 1187, "height": 574 },
+      "selection_hash": "1567f53fa2f5fd352be4504b3ac74a89e50ee1b60df50eb54926ff36e74d0989",
+      "output": "assets/hero/inhouse/optics-105.webp"
+    },
+    {
+      "subject": "Optics",
+      "id": "70",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Optics/image/70.png",
+      "original_dimensions": { "width": 1950, "height": 1462 },
+      "selection_hash": "1653d73135712c51891167e5fb0f0c0be68771f4108de672b8deec0a54f1548e",
+      "output": "assets/hero/inhouse/optics-70.webp"
+    },
+    {
+      "subject": "Optics",
+      "id": "58",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Optics/image/58.png",
+      "original_dimensions": { "width": 1108, "height": 715 },
+      "selection_hash": "19a22a308b2d4a80bbc1e7feae90b0f0eee7e67f771477db18a23b4fecc47ca1",
+      "output": "assets/hero/inhouse/optics-58.webp"
+    },
+    {
+      "subject": "Optics",
+      "id": "8",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Optics/image/8.png",
+      "original_dimensions": { "width": 1188, "height": 891 },
+      "selection_hash": "19dbfba29f78c0a3aa3af4f814516a1c2dfc93312e486a66adee67580d810ff4",
+      "output": "assets/hero/inhouse/optics-8.webp"
+    },
+    {
+      "subject": "Physical_Acoustics",
+      "id": "92",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Physical_Acoustics/image/92.png",
+      "original_dimensions": { "width": 2716, "height": 1867 },
+      "selection_hash": "01603da20eff32005104b3f2d90edb525702cca7394baa7d75f010e9aa7b15d6",
+      "output": "assets/hero/inhouse/physical-acoustics-92.webp"
+    },
+    {
+      "subject": "Physical_Acoustics",
+      "id": "48",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Physical_Acoustics/image/48.png",
+      "original_dimensions": { "width": 2977, "height": 1675 },
+      "selection_hash": "04e20c8c27d9e6e192633ffd52f2a3c76be2b397428e3bb34931307c8b731c84",
+      "output": "assets/hero/inhouse/physical-acoustics-48.webp"
+    },
+    {
+      "subject": "Physical_Acoustics",
+      "id": "133",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Physical_Acoustics/image/133.png",
+      "original_dimensions": { "width": 2808, "height": 1467 },
+      "selection_hash": "05dacdffcee5c3a54f8296278d04d2de17f7da00e5192e30dc9ba4de5afd5d1e",
+      "output": "assets/hero/inhouse/physical-acoustics-133.webp"
+    },
+    {
+      "subject": "Physical_Acoustics",
+      "id": "50",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Physical_Acoustics/image/50.png",
+      "original_dimensions": { "width": 3050, "height": 2375 },
+      "selection_hash": "05f55466e037b09cc5140e8adcdd1c3e2c0015efff357608a6ecf56b4c26e44e",
+      "output": "assets/hero/inhouse/physical-acoustics-50.webp"
+    },
+    {
+      "subject": "Physical_Acoustics",
+      "id": "89",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Physical_Acoustics/image/89.png",
+      "original_dimensions": { "width": 1891, "height": 1063 },
+      "selection_hash": "08e2f20437e7c24968e9e8c47db7b87140114028557819edcc21565d243bec11",
+      "output": "assets/hero/inhouse/physical-acoustics-89.webp"
+    },
+    {
+      "subject": "Quantum_Mechanics",
+      "id": "80",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Quantum_Mechanics/image/80.png",
+      "original_dimensions": { "width": 1825, "height": 1458 },
+      "selection_hash": "07f798629f8e7a5e04fe3f717ab28053215fa35395996e40ceba58918a353995",
+      "output": "assets/hero/inhouse/quantum-mechanics-80.webp"
+    },
+    {
+      "subject": "Quantum_Mechanics",
+      "id": "2",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Quantum_Mechanics/image/2.png",
+      "original_dimensions": { "width": 1425, "height": 642 },
+      "selection_hash": "09a80e264c3c78b031444d0339915edcf0ec0b8d77bf3099edb052f6101f648a",
+      "output": "assets/hero/inhouse/quantum-mechanics-2.webp"
+    },
+    {
+      "subject": "Quantum_Mechanics",
+      "id": "78",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Quantum_Mechanics/image/78.png",
+      "original_dimensions": { "width": 1375, "height": 1175 },
+      "selection_hash": "0f6ce24e163f23fbe1bcc8c1e1f995a8506e4f708e608784d1635f7687a3e592",
+      "output": "assets/hero/inhouse/quantum-mechanics-78.webp"
+    },
+    {
+      "subject": "Quantum_Mechanics",
+      "id": "89",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Quantum_Mechanics/image/89.png",
+      "original_dimensions": { "width": 1300, "height": 1033 },
+      "selection_hash": "14911045d6900c61f9b03e98b95e66014326f39e4ae2a8dc8066e63994ff2d98",
+      "output": "assets/hero/inhouse/quantum-mechanics-89.webp"
+    },
+    {
+      "subject": "Quantum_Mechanics",
+      "id": "148",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Quantum_Mechanics/image/148.png",
+      "original_dimensions": { "width": 2967, "height": 1392 },
+      "selection_hash": "19a83bce0ea01e2908d67a409dc64adec4fc3089131cb1ffd0cd9164c0c1070e",
+      "output": "assets/hero/inhouse/quantum-mechanics-148.webp"
+    },
+    {
+      "subject": "Thermodynamics",
+      "id": "73",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Thermodynamics/image/73.png",
+      "original_dimensions": { "width": 1575, "height": 1181 },
+      "selection_hash": "01c6d14ed9d2584dd39b2b1ca66ec21b37db68e7fb8481f40168cdcfa0740d42",
+      "output": "assets/hero/inhouse/thermodynamics-73.webp"
+    },
+    {
+      "subject": "Thermodynamics",
+      "id": "117",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Thermodynamics/image/117.png",
+      "original_dimensions": { "width": 1000, "height": 750 },
+      "selection_hash": "0ab79baafa9594e6e42d1393851e82e2e6f31f245e0cd5a93cccae90168deca0",
+      "output": "assets/hero/inhouse/thermodynamics-117.webp"
+    },
+    {
+      "subject": "Thermodynamics",
+      "id": "112",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Thermodynamics/image/112.png",
+      "original_dimensions": { "width": 2121, "height": 1591 },
+      "selection_hash": "10f21f63dcbc6b72ed112bb46ece73d0e04fe597040eaaccbcdfd56116db9cbf",
+      "output": "assets/hero/inhouse/thermodynamics-112.webp"
+    },
+    {
+      "subject": "Thermodynamics",
+      "id": "160",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Thermodynamics/image/160.png",
+      "original_dimensions": { "width": 1750, "height": 1242 },
+      "selection_hash": "16988df9c085a4edb6f9857433029e71372a270f398092d1f955cb2c10b3bae8",
+      "output": "assets/hero/inhouse/thermodynamics-160.webp"
+    },
+    {
+      "subject": "Thermodynamics",
+      "id": "71",
+      "source": "Data/SciT2I_inhouse_Testset_Merged/Thermodynamics/image/71.png",
+      "original_dimensions": { "width": 1542, "height": 1156 },
+      "selection_hash": "244b5c7e67e079e530991ce551fd4bddee514679ba95cfdb1142cf344ffb7368",
+      "output": "assets/hero/inhouse/thermodynamics-71.webp"
+    }
+  ]
+}

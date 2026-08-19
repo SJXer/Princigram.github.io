@@ -1,4 +1,14 @@
 (() => {
+  const heroGallery = document.querySelector("[data-hero-gallery]");
+
+  if (heroGallery && !heroGallery.classList.contains("is-ready")) {
+    heroGallery.querySelectorAll(".hero-gallery-row").forEach((row) => {
+      const set = row.querySelector(".hero-gallery-set");
+      if (set) row.append(set.cloneNode(true));
+    });
+    heroGallery.classList.add("is-ready");
+  }
+
   const navToggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-nav]");
 
@@ -55,12 +65,49 @@
     observedSections.forEach((section) => sectionObserver.observe(section));
   }
 
+  const showcaseTabs = [...document.querySelectorAll("[data-showcase-tab]")];
+  const showcasePanels = [...document.querySelectorAll("[data-showcase-panel]")];
+
+  const activateShowcase = (tab) => {
+    if (!tab) return;
+    const panelId = tab.getAttribute("aria-controls");
+
+    showcaseTabs.forEach((item) => {
+      const isActive = item === tab;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+      item.tabIndex = isActive ? 0 : -1;
+    });
+
+    showcasePanels.forEach((panel) => {
+      panel.hidden = panel.id !== panelId;
+    });
+  };
+
+  showcaseTabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => activateShowcase(tab));
+    tab.addEventListener("keydown", (event) => {
+      if (!["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+
+      let nextIndex = index;
+      if (["ArrowRight", "ArrowDown"].includes(event.key)) nextIndex = (index + 1) % showcaseTabs.length;
+      if (["ArrowLeft", "ArrowUp"].includes(event.key)) nextIndex = (index - 1 + showcaseTabs.length) % showcaseTabs.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = showcaseTabs.length - 1;
+
+      showcaseTabs[nextIndex].focus();
+      activateShowcase(showcaseTabs[nextIndex]);
+    });
+  });
+
   const demoTabs = [...document.querySelectorAll("[data-demo-src]")];
   const demoFrame = document.querySelector("[data-demo-frame]");
   const demoWrap = document.querySelector("[data-demo-wrap]");
   const demoHeading = document.querySelector("[data-demo-heading]");
   const demoCopy = document.querySelector("[data-demo-copy]");
   const demoOpen = document.querySelector("[data-demo-open]");
+  const demoPanel = document.querySelector("#demo-panel");
 
   const activateDemo = (tab) => {
     if (!tab || !demoFrame || !demoWrap) return;
@@ -79,6 +126,7 @@
     if (demoHeading) demoHeading.textContent = title;
     if (demoCopy) demoCopy.textContent = description;
     if (demoOpen) demoOpen.href = source;
+    if (demoPanel && tab.id) demoPanel.setAttribute("aria-labelledby", tab.id);
     demoFrame.title = `${title} interactive viewer`;
 
     if (demoFrame.getAttribute("src") !== source) {
@@ -107,6 +155,14 @@
 
       demoTabs[nextIndex].focus();
       activateDemo(demoTabs[nextIndex]);
+    });
+  });
+
+  document.querySelectorAll("[data-open-qualitative]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const qualitativeTab = demoTabs.find((tab) => tab.dataset.demoSrc?.includes("qualitative-comparison"));
+      activateDemo(qualitativeTab);
+      window.setTimeout(() => qualitativeTab?.focus({ preventScroll: true }), 0);
     });
   });
 
