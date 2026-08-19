@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "case": {
+    "subject": "Physical_Acoustics",
+    "id": "21",
+    "summary": "A sound source emits waves towards a reflecting surface, demonstrating wave reflection.",
+    "prompt": "The diagram shows a sound source S emitting waves towards a reflecting surface AB. The incident angle \\( \\theta_i \\) and the reflected angle \\( \\theta_r \\) are marked. Distances \\( d_1 \\), \\( d_2 \\), and \\( d_3 \\) are shown, along with paths \\( R_1 \\) and \\( R_2 \\) leading to point D.",
+    "detail": "The diagram shows a sound source S emitting waves towards a reflecting surface AB. The incident angle \\( \\theta_i \\) and the reflected angle \\( \\theta_r \\) are marked. Distances \\( d_1 \\), \\( d_2 \\), and \\( d_3 \\) are shown, along with paths \\( R_1 \\) and \\( R_2 \\) leading to point D.",
+    "prompt_source_field": "detail",
+    "prompt_source_note": "The demos expose summary and detail fields rather than a separate prompt field; detail is the task text shown by the qualitative viewer. Physical_Acoustics is displayed as Acoustics in the demos."
+  },
+  "scores": {
+    "checklist_items": 46,
+    "princigram_bagel": {
+      "passed": 34,
+      "percentage": 73.9
+    },
+    "qwen_image": {
+      "passed": 11,
+      "percentage": 23.9
+    },
+    "flux_1_dev": {
+      "passed": 13,
+      "percentage": 28.3
+    }
+  },
+  "sources": {
+    "qualitative": "assets/demos/qualitative-comparison.html",
+    "checklist": "assets/demos/structured-evaluation.html",
+    "case_match": "The subject, id, summary, and detail fields match exactly across both demos."
+  },
+  "extraction": {
+    "method": "Decode the selected embedded JPEG data URI without re-encoding.",
+    "selection": "Use the higher-resolution Checklist Explorer copy for Reference, Qwen-Image, FLUX.1 dev, and Princigram-BAGEL; use the Qualitative Gallery for the other six model outputs."
+  },
+  "images": [
+    {
+      "kind": "reference",
+      "label": "Reference",
+      "file": "reference.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.ref",
+      "width": 679,
+      "height": 509,
+      "bytes": 28178,
+      "sha256": "46d8289a0e7e15f335cbdd662bb540f568b486b8419fdca2dfdc26f55676de59"
+    },
+    {
+      "kind": "model",
+      "label": "Seedream 4.0",
+      "file": "seedream-4-0.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"Seedream 4.0\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 19747,
+      "sha256": "02ec2845449b4aba848e8ba61a5ea3c33cc26bcd1a9842a734eaffce6d752bf9"
+    },
+    {
+      "kind": "model",
+      "label": "Gemini 2.5 Flash Image",
+      "file": "gemini-2-5-flash-image.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"Gemini 2.5 Flash Image\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 30479,
+      "sha256": "5bc0f59fe9ca0e5a1871b15ba49059262fea1bd69821fd288ac4730a8b7c44dc"
+    },
+    {
+      "kind": "model",
+      "label": "GPT-Image-1",
+      "file": "gpt-image-1.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"GPT-Image-1\"]",
+      "width": 460,
+      "height": 460,
+      "bytes": 27382,
+      "sha256": "51443616d4b6a20338a9fab75ff120a06e453bbe4f892b947a8783e487178267"
+    },
+    {
+      "kind": "model",
+      "label": "Qwen-Image",
+      "file": "qwen-image.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_qwen",
+      "width": 680,
+      "height": 382,
+      "bytes": 32873,
+      "sha256": "e09107c7779e6c73ec668e581295f245287e7302d9d9d61b82ffdcd67f5aefb9"
+    },
+    {
+      "kind": "model",
+      "label": "HiDream-I1-Full",
+      "file": "hidream-i1-full.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"HiDream-I1-Full\"]",
+      "width": 460,
+      "height": 259,
+      "bytes": 14826,
+      "sha256": "ab1b90671e34734d55303e3a63ba05c2caaf3eef53fbb38946c7bb60ba4aa63b"
+    },
+    {
+      "kind": "model",
+      "label": "FLUX.1 dev",
+      "file": "flux-1-dev.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_flux",
+      "width": 680,
+      "height": 382,
+      "bytes": 17618,
+      "sha256": "2f104bcb2c3e075b6dcdf3ac97a29c26edd9cbc299691afeae0d2ab5ff086eb6"
+    },
+    {
+      "kind": "model",
+      "label": "SD 3.5 Large",
+      "file": "sd-3-5-large.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"SD 3.5 Large\"]",
+      "width": 460,
+      "height": 258,
+      "bytes": 20475,
+      "sha256": "eb604890a290d9688026be2a40aa45ea6fbe1ddcb5ac1603dac8902e89677cc7"
+    },
+    {
+      "kind": "model",
+      "label": "BAGEL",
+      "file": "bagel.jpg",
+      "source_demo": "qualitative",
+      "source_field": "case.imgs[\"BAGEL\"]",
+      "width": 460,
+      "height": 258,
+      "bytes": 12914,
+      "sha256": "d1f8676fa85b4f1befb746986fbaf49aa921dcfc82f3c13cda5ee6c58811dbd1"
+    },
+    {
+      "kind": "model",
+      "label": "Princigram-BAGEL",
+      "file": "princigram-bagel.jpg",
+      "source_demo": "checklist",
+      "source_field": "case.img_ours",
+      "width": 680,
+      "height": 382,
+      "bytes": 29618,
+      "sha256": "3914dfa3ad6b4d7f52fdadb62d53d3c47c7c4655c286a7fa499cad51abed25a4"
+    }
+  ]
+}
